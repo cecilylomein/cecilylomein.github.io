@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">
 
+
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'> 
 
     <!-- JQUERY -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -66,7 +68,7 @@
             <div id="categories" visibility="visible" class="row">
                     <div class="category"><a href="#about">about</a>
                     </div>
-                    <div class="category"><a href="#work">work</a>
+                    <div class="category"><a href="#work-section">work</a>
                     </div>
                     <div class="category"><a href="#contact">contact</a>
                     </div>
@@ -241,73 +243,146 @@
             </div>
 
             <div class="row" id="filter-main"> <!-- FILTERS -->
-                    <a class="filter" href="filterArt()">ART</a>
-                    <a class="filter" href="filterDesign()">DESIGN</a>
-                    <a class="filter" href="filterWeb()">WEB</a>
-                    <a class="filter" href="filterVideo()">VIDEO</a>
-                    <a class="filter" href="filterDance()">DANCE</a> 
+                    <a class="filter" onclick="filterArt()">ART</a>
+                    <a class="filter" onclick="filterDesign()">DESIGN</a>
+                    <a class="filter" onclick="filterWeb()">WEB</a>
+                    <a class="filter" onclick="filterVideo()">VIDEO</a>
+                    <a class="filter" onclick="filterDance()">DANCE</a> 
             </div>
 
-            <div class="container work-container">
-
+            <div class="container work-container caption-style-1">
                 <div class="row">
-                    <span class="work-obj">
-                        <img class="work" src="img/bubblesim-thumbnail.png"  />
-                        <span class="work-hover-text">BubbleSim</span>
+                    <span class="work-obj" onclick="window.open('http://cecilylomein.github.io/BubbleSim');">
+                        <img src="img/bubblesim-thumbnail.png" alt="bubblesim" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>BubbleSim</h1>
+                                <p>Interactive 3D Bubble Simulator written with WebGL, May 2016</p>
+                                <p>[opens in new tab]</p>
+                            </div>
+                        </div>
                     </span>
                     <span class="work-obj">
-                        <img class="work" src="img/styleguide-thumbnail.jpg"  />
-                        <span class="work-hover-text">V5 Company Rebrand</span>
+                        <img src="img/styleguide-thumbnail.jpg" alt="styleguide" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>V5 Company Rebrand</h1>
+                                <p>May 2016</p>
+                            </div>
+                        </div>
                     </span>
                     <span class="work-obj">
-                        <img class="work" src="img/heaven-thumbnail.jpg"/>
-                        <span class="work-hover-text">04. Does it get dark in heaven too?</span>
+                        <img src="img/heaven-thumbnail.jpg" alt="04." />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>04. Does it get dark in heaven too?</h1>
+                                <p>Self-choreographed, filmed, & produced, May 2016 </p>
+                            </div>
+                        </div>
                     </span>
                 </div>
 
                 <div class="row">
                     <span class="work-obj">
-                        <img class="work" src="img/mag-thumbnail.jpg"  />
-                        <span class="work-hover-text">Molly Soda Magazine Spread</span>
+                        <img class="work" src="img/mag-thumbnail.jpg" alt="magazine" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Magazine Spread</h1>
+                                <p>Subtext, April 2016</p>
+                            </div>
+                        </div>
                     </span>
                     <span class="work-obj">
-                        <img class="work" src="img/montauk-thumbnail.jpg"/>
-                        <span class="work-hover-text">"Meet Me In Montauk"</span>
+                        <img class="work" src="img/montauk-thumbnail.jpg" alt="montauk" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>"Meet Me In Montauk"</h1>
+                                <p>Choreographed for Sarabande Dance Ensemble, April 2016</p>
+                            </div>
+                        </div>
                     </span>
                     <span class="work-obj">
-                        <img class="work" src="img/bookjacket-thumbnail.png"/>
-                        <span class="work-hover-text">"Something That Needs Nothing" Book Jacket Design</span>
+                        <img class="work" src="img/bookjacket-thumbnail.png" alt="bookjacket" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Something That Needs Nothing</h1>
+                                <p>Book Jacket design, March 2016</p>
+                            </div>
+                        </div>
                     </span>
 
                 </div>
                 <div class="row">
                     <span class="work-obj">
-                        <img class="work" src="img/tcc-thumbnail.jpg"/>
-                        <span class="work-hover-text">Commissioned Photography</span>
+                        <img class="work" src="img/tcc-thumbnail.jpg" alt="tcc" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Commissioned Photography</h1>
+                                <p>May 2013 - December 2016</p>
+                            </div>
+                        </div>
                     </span>
                     <span class="work-obj">
-                        <img class="work" src="img/rez-thumbnail.png"/>
-                        <span class="work-hover-text">Poster Advertisments for The Rez</span>
+                        <img class="work" src="img/rez-thumbnail.png" alt="rez" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Poster Ads</h1>
+                                <p>Designed for local coffeeshop, <span style="font-style:italic;">The Rez</span>, February 2016</p>
+                            </div>
+                        </div>
                     </span>
-                    <span class="work-obj">
-                        <img class="work" src="img/timbre-thumbnail.jpg" />
-                        <span class="work-hover-text">Timbre Music</span>
+                    <span class="work-obj" onclick="window.open('http://timbre-music.herokuapp.com');">
+                        <img class="work" src="img/timbre-thumbnail.jpg" alt="timbre" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Timbre Music</h1>
+                                <p>Created for Web Programming @ Tufts University, December 2015</p>
+                                <p>[opens in new tab]</p>
+                            </div>
+                        </div>
                     </span>
                 </div>
                 <div class="row">
                     <span class="work-obj">
-                        <img class="work" src="img/sarabande-thumbnail.jpg"/>
-                        <span class="work-hover-text">Sarabande Dance Ensemble Promotional Video</span>
+                        <img class="work" src="img/sarabande-thumbnail.jpg" alt="sarabande"/>
+                          <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Sarabande Dance Ensemble</h1>
+                                <p>Promotional Video, September 2015</p>
+                            </div>
+                        </div>
                     </span>
 
                     <span class="work-obj">
-                        <img class="work" src="img/samsara-thumbnail.jpg"  />
-                        <span class="work-hover-text">Samsara</span>
+                        <img class="work" src="img/samsara-thumbnail.jpg" alt="samsara" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Samsara</h1>
+                                <p>Choreographed for Sarabande Dance Ensemble, April 2015</p>
+                            </div>
+                        </div>
                     </span>
 
                     <span class="work-obj">
-                        <img class="work" src="img/photo-thumbnail.jpg"/>
-                        <span class="work-hover-text">Art Photography</span>
+                        <img class="work" src="img/photo-thumbnail.jpg" alt="art photography"/>
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Art Photography</h1>
+                                <p>February 2013 - current</p>
+                            </div>
+                        </div>
                     </span>
                 </div>
                 <div class="row">
@@ -355,7 +430,8 @@
 
 
 var target = $('#categories').offset().top;
-
+var skilltarget = $('#skills').offset().top;
+var scrollBottom;
 $(window).scroll(function() {
     if ($(window).scrollTop() > target) {
         $('#navbar').fadeIn();
@@ -364,20 +440,9 @@ $(window).scroll(function() {
         $('#categories').fadeIn();
         $('#navbar').fadeOut();   
     }
-});
 
 
-$(".rotate").textrotator({
-        animation: "fade",
-        separator: "; ",
-    speed: 2250
-    });
 
-/* fix scroll issue */
-var skilltarget = $('#skills').offset().top;
-var scrollBottom;
-
-$(window).scroll(function() {
     scrollBottom = $(window).scrollTop() + $(window).height();
     if (scrollBottom > skilltarget) {
         $('.skillbar').each(function(){
@@ -387,11 +452,47 @@ $(window).scroll(function() {
         });
     }
 
+});
+
+
+
+$(document).ready(function() {
+    $(".rotate").textrotator({
+        animation: "fade",
+        separator: "; ",
+    speed: 2250
+    });
 
 });
 
 
+
 function renderNight() {
+
+    alert('lol this doesn\'t work yet sry');
+}
+
+function filterArt() {
+
+    alert('lol this doesn\'t work yet sry');
+}
+
+function filterDesign() {
+
+    alert('lol this doesn\'t work yet sry');
+}
+
+function filterWeb() {
+
+    alert('lol this doesn\'t work yet sry');
+}
+
+function filterVideo() {
+
+    alert('lol this doesn\'t work yet sry');
+}
+
+function filterDance() {
 
     alert('lol this doesn\'t work yet sry');
 }
