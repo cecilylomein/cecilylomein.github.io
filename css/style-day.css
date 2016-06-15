@@ -196,7 +196,11 @@ hr.small {
 /* About */
 
 #about {
-    background-color: #eeeeee;
+    background: #eeeeee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#a5a5a5, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a5a5a5, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a5a5a5, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a5a5a5, white); /* Standard syntax */
     color:black;
 }
 
@@ -454,6 +458,11 @@ hr.small {
 
 footer {
     padding: 100px 0;
-    background:#eeeeee;
+    background: #eeeeee; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white,#dddddd); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white,#dddddd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white,#dddddd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,#dddddd); /* Standard syntax */
+    
     color:black;
 }
