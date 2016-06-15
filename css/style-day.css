@@ -160,7 +160,7 @@ hr.small {
     position: fixed;
     width:99%;
     height:50px;
-    z-index: 4;
+    z-index: 10;
     top: 0;
     font-size: 14px;
     background-color:rgba(255,255,255,1);
@@ -387,46 +387,113 @@ hr.small {
     padding:100px 0;
 }
 
-.work-container {
-    width:700px;
-}
 .work-obj {
     position:relative;
-
 }
-.work {
+.work-obj img {
+
     height:300px;
-    opacity:1;
-    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-    filter: grayscale(0%);
-    padding:5px 2px;
-}
-.work:hover {
-    opacity:.7;
-    filter:blur(3px);
-    -webkit-filter:blur(3px);
+
 }
 
 
-.work-hover-text {
-    color:white;
-    font-weight:100;
-    letter-spacing: 5px;
-    font-size:14px;
-    position:absolute;
-    left:3px;
-    top:-20px;
-    width:290px;
+
+/* captions */
+h1,h2,h3,h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.caption-style-1{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.caption-style-1 .work-obj{
+    float: left;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption-style-1 .work-obj:hover .caption{
+    opacity: 1;
+
+}
+
+
+.caption-style-1 img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+}
+
+
+.caption-style-1 .caption{
+    cursor: crosshair;
+    position: absolute;
+    opacity: 0;
+
+    -webkit-transition:all 0.45s ease-in-out;
+    -moz-transition:all 0.45s ease-in-out;
+    -o-transition:all 0.45s ease-in-out;
+    -ms-transition:all 0.45s ease-in-out;
+    transition:all 0.45s ease-in-out;
+
+}
+.caption-style-1 .blur{
+    background-color: rgba(0,0,0,0.65);
+    height: 300px;
+    width: 300px;
+    z-index: 5;
+    position: absolute;
+}
+
+.caption-style-1 .caption-text h1{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.caption-style-1 .caption-text{
+    z-index: 8;
+    color: #fff;
+    position: absolute;
+    width: 300px;
+    height: 300px;
     text-align: center;
+    top:80px;
+    padding:0 10px;
+
 }
 
+.caption-style-1 .long-text {
+    top:50px;
+}
 
+.caption-text p {
+    letter-spacing:2.5px;
+    font-style:italic;
+}
+
+.caption-text .date {
+
+    font-size:12px;
+    font-style:normal;
+    letter-spacing: 1px;
+    position:relative;
+    top:20px;
+}
+/* filters */    
 
 
 #filter-main {
     padding:50px 0;
 }
 .filter {
+    position:relative;
+    color: black;
     display:inline;
     padding: 20px;
     letter-spacing: 5px;
@@ -438,6 +505,12 @@ hr.small {
     z-index: 4;
 }
 
+
+
+.night-mode {
+    color:black;
+    font-style:italic;
+}
 /* Footer */
 
 
