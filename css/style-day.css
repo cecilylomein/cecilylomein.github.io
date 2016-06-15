@@ -70,6 +70,7 @@ body {
 
 }
 
+
 /* BUTTON */
 
 
@@ -485,6 +486,20 @@ h1,h2,h3,h4{
     position:relative;
     top:20px;
 }
+
+
+.work-dialog {
+    display:none;
+}
+
+.work-thumb {
+    display:inline;
+}
+.work-thumb img{
+    height:100px;
+
+}
+
 /* filters */    
 
 
