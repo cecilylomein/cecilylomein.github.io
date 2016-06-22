@@ -405,6 +405,13 @@ hr.small {
 
 }
 
+#work-container {
+    display: block;
+    margin: auto;
+    text-align:center;
+    width:920px;
+
+}
 
 
 /* captions */
@@ -415,14 +422,13 @@ h1,h2,h3,h4{
 
 .caption-style-1{
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+
     
 }
 
 .caption-style-1 .work-obj{
     float: left;
-    padding: 0px;
+    padding: 2px;
     position: relative;
     overflow: hidden;
 }
@@ -438,6 +444,7 @@ h1,h2,h3,h4{
     padding: 0px;
     float: left;
     z-index: 4;
+    opacity:.92;
 }
 
 
