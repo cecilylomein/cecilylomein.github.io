@@ -24,6 +24,12 @@ section {
     font-size: 50px;
 }
 
+
+.glyphicon-new-window {
+    font-size:14px;
+
+}
+
 a:link {
 	color:black;
 	text-decoration:none !important;
@@ -382,11 +388,13 @@ hr.small {
     background:#FFFFFF;
     color:black;
     padding-bottom:600px;
+
 }
 
 #work-header {
     padding:100px 0;
 }
+
 
 .work-obj {
     position:relative;
@@ -500,6 +508,11 @@ h1,h2,h3,h4{
 
 }
 
+
+#work-closeup img {
+    width:300px;
+}
+
 /* filters */    
 
 
@@ -523,8 +536,15 @@ h1,h2,h3,h4{
 
 
 .night-mode {
+    position:relative;
     color:black;
     font-style:italic;
+    z-index:100;
+}
+.night-mode:hover{
+    color:#ebbcbc !important;
+    font-size:24px;
+
 }
 /* Footer */
 
@@ -553,4 +573,12 @@ footer {
     background: linear-gradient(white,#dddddd); /* Standard syntax */
     
     color:black;
+
+
+}
+
+
+
+#mag-dialog img {
+    height:100px;
 }

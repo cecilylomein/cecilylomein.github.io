@@ -15,7 +15,8 @@
     <link href="css/style-day.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">
+    <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">  
+
 
 
     <!-- FONTS -->
@@ -113,6 +114,8 @@
             <div class="row" id="about-text-section">
                 <div class="container-fluid">
                 My creative pursuits revolve around the intersection between the digital and artistic spheres. as an interdisciplinary designer and innovative problem-solver, i believe in transcending the boundaries between media as a means to communicate.  <span id="square-glyphicon" class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+
+
                 </div>
             </div>
 
@@ -266,10 +269,10 @@
                         <div class="caption">
                             <div class="blur"></div>
                             <div class="caption-text">
-                                <h1>BubbleSim</h1>
+                                <h1>BubbleSim <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
                                 <p>Interactive 3D Bubble Simulator written with WebGL</p>
-                                <p class="date">May 2016</p>
-          
+                                <p class="date">May 2016
+                                </p>
                             </div>
                         </div>
                     </span>
@@ -305,7 +308,7 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-                            <iframe src="https://player.vimeo.com/video/164029361?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/164029361?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
                         </div>
                     </span>
@@ -323,14 +326,21 @@
                             </div>
                         </div>
                         <div class="work-dialog">
+                            <div class="row" id="mag-dialog">
 
-
-
-
-                            CONTENT GOES HERE
-
-
-
+                                    <a href="img/design/mag1.png"  data-gallery>
+                                        <img src="img/design/mag1-thumb.png"  >
+                                    </a>
+                                    <a href="img/design/mag2.png" data-gallery>
+                                        <img src="img/design/mag2-thumb.png" >
+                                    </a>
+                                    <a href="img/design/mag3.png" data-gallery>
+                                        <img src="img/design/mag3-thumb.png"  >
+                                    </a>
+                                    <a href="img/design/mag4.png"  data-gallery>
+                                        <img src="img/design/mag4-thumb.png"  >
+                                    </a>
+                                </div>
                         </div>
                     </span>
                     <span class="work-obj art dance">
@@ -345,7 +355,7 @@
                         </div>
                         <div class="work-dialog">
 
-                            <iframe src="https://player.vimeo.com/video/165464455?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/165464455?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
                         </div>
                     </span>
@@ -361,7 +371,8 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-                            <div class="work-thumb">
+
+                            <div class="row work-thumb">
                                 <img class="thumb" src="img/art/eye.png" alt="eye"/>
                                 <img class="thumb" src="img/art/mend.png" alt="mend"/>
                                 <img class="thumb" src="img/art/pp.png" alt="pp"/>
@@ -370,6 +381,15 @@
                                 <img class="thumb" src="img/art/status.png" alt="status"/>
                                 <img class="thumb" src="img/art/capitalism.png" alt="capitalism"/>
                             </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div id="work-closeup" class="col-md-4">
+                                </div>
+                                <div id="work-info" class="col-md-4">
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+
                         </div>
                     </span>
 
@@ -385,11 +405,24 @@
                             </div>
                         </div>
                         <div class="work-dialog">
+<!--
+                            <script>
 
+                                var folder = "img/tcc/";
 
+                                $.ajax({
+                                    url : folder,
+                                    success: function (data) {
+                                        $(data).find("a").attr("href", function (i, val) {
+                                            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                                                $("body").append( "<img src='"+ folder + val +"'>" );
+                                            } 
+                                        });
+                                    }
+                                });
+                            </script>
 
-
-                            CONTENT GOES HERE
+-->
                         </div>
                     </span>
                     <span class="work-obj design">
@@ -403,11 +436,11 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-
-
-
-
-                            CONTENT GOES HERE
+                            <div class="work-thumb">
+                                <img class="thumb" src="img/design/rez1.jpg" alt="rez1"/>
+                                <img class="thumb" src="img/design/rez2.jpg" alt="rez2"/>
+                                <img class="thumb" src="img/design/rez3.jpg" alt="rez3"/>
+                            </div>                         
                         </div>
                     </span>
                     <span class="work-obj web design no-dialog" onclick="window.open('http://timbre-music.herokuapp.com');">
@@ -415,10 +448,10 @@
                         <div class="caption">
                             <div class="blur"></div>
                             <div class="caption-text">
-                                <h1>Timbre Music</h1>
+                                <h1>Timbre Music <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
                                 <p>Created for Web Programming @ Tufts University</p>
-                                <p class="date">December 2015</p>
-
+                                <p class="date">December 2015
+                                </p>
                             </div>
                         </div>
    
@@ -436,7 +469,7 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-                            <iframe src="https://player.vimeo.com/video/165467647?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>                        
                     </span>
 
@@ -451,7 +484,7 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-                            <iframe src="https://player.vimeo.com/video/165465064?autoplay=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/165465064?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                     </span>
 
@@ -510,6 +543,8 @@
     </footer>
 
 
+    
+
 
 
 
@@ -563,7 +598,17 @@
             });
         } 
 
+
+        $('.thumb').click(function () {
+            $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/eye.png" alt="eye"/>').show();
+            $(this).parent().next().find('#work-info').html('Eye<br>10" x 10"<br>Mixed Media<br>May 2016').show();
+        });
+
     });
+
+
+
+
 
 
 
@@ -571,6 +616,7 @@
 
         alert('lol this doesn\'t work yet sry');
     }
+
 
     function filterArt() {
 
@@ -596,6 +642,7 @@
 
         alert('lol this doesn\'t work yet sry');
     }
+
 
 
 
