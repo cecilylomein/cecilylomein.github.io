@@ -8,6 +8,7 @@
 /* GLOBAL */
 
 body {
+
     cursor:crosshair;
 	font-family: Helvetica;
 	font-weight: 200;
@@ -536,6 +537,22 @@ h1,h2,h3,h4{
 
 .hidden-info {
     display:none;
+}
+
+
+.description {
+    position:relative;
+    top:120px;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.description-title {
+    line-height: 28px;
+    position:relative;
+    top:-40px;
+    font-size:32px;
+    letter-spacing:5px;"
 }
 
 /* filters */    
