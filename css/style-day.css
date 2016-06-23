@@ -28,7 +28,6 @@ section {
 
 .glyphicon-new-window {
     font-size:14px;
-
 }
 
 a:link {
@@ -524,8 +523,19 @@ h1,h2,h3,h4{
 #work-closeup img {
     width:100%;
 }
+
 #work-detail img {
-    width:100%;
+    width:300px;
+
+}
+
+#work-info {
+    position:relative;
+    top:100px;
+}
+
+.hidden-info {
+    display:none;
 }
 
 /* filters */    

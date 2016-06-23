@@ -399,6 +399,44 @@
                                 <div id="work-info" class="col-md-4">
                                 </div>
                                 <div class="col-md-1"></div>
+                                <div style="display:none;" id="work-detail"><img src="img/art/eye-detail.png"/></div>
+
+                                <div class="hidden-info" id="eye-info">
+                                    <span style="font-size:20px;font-weight:400;">eYYYe</span><br><br>
+                                    mixed media<br>
+                                    june 2016
+                                </div>
+                                <div class="hidden-info" id="mend-info">
+                                    <span style="font-size:20px;font-weight:400;">I am on The Mend</span><br><br>
+                                    mixed media<br>
+                                    june 2016
+                                </div>
+                                <div class="hidden-info" id="pp-info">
+                                    <span style="font-size:20px;font-weight:400;">P</span><br><br>
+                                    mixed media<br>
+                                    june 2016
+                                </div>
+                                <div class="hidden-info" id="god-info">
+                                    <span style="font-size:20px;font-weight:400;">Their Eyes Were Watching God on the L Train</span><br><br>
+                                    mixed media<br>
+                                    may 2016
+
+                                </div>
+                                <div class="hidden-info" id="sorry-info">
+                                    <span style="font-size:20px;font-weight:400;">Sorry</span><br><br>
+                                    mixed media<br>
+                                    may 2016
+                                </div>
+                                <div class="hidden-info" id="status-info">
+                                    <span style="font-size:20px;font-weight:400;">Somebody, Anybody, Please Like My Status</span><br><br>
+                                    mixed media<br>
+                                    may 2016
+                                </div>
+                                <div class="hidden-info" id="capitalism-info">
+                                    <span style="font-size:20px;font-weight:400;">Suck My Capitalism</span><br><br>
+                                    mixed media<br>
+                                    may 2016
+                                </div>                                           
                             </div>
 
                         </div>
@@ -616,6 +654,7 @@
             separator: "; ",
         speed: 2250
         });
+        $("#work-detail").hide();
     });
 
 
@@ -633,16 +672,28 @@
 
 
         $('.thumb').click(function () {
+
             $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '.png" alt="' + $(this).attr('id') + '"/>').show();
-            $(this).parent().next().find('#work-detail').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '-detail.png" alt="' + $(this).attr('id') + '-detail"/>').show();
-            $(this).parent().next().find('#work-info').html('Eye<br>10" x 10"<br>Mixed Media<br>May 2016').show();
+            var info = '#' + $(this).attr('name') + '-info';
+            var infotext = $(this).parent().next().find(info).html();
+            $(this).parent().next().find('#work-info').html(infotext).show();
+
+            $(this).parent().next().find('#work-closeup').hover(function(e) {
+                $('#work-detail img').css({'top':e.pageY,'left':e.pageX, 'position':'absolute', 'border':'1px solid black', 'padding':'5px'}).show();
+
+                console.log("here");
+            }, function() {
+                $('#work-detail img').hide();
+            });
+
+
         });
+
+
 
     });
 
-
-
-
+  
 
 
 
@@ -652,7 +703,7 @@
     }
 
     function reveal(element) {
-        $('#work-container span').each(function() {
+        $('#work-container .work-obj').each(function() {
             if (!$(this).hasClass(element)) {
                 $(this).animate({opacity:'.1'}, 200);
             }
