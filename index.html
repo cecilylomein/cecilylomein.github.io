@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">  
     <link rel="shortcut icon" href="favicon.ico" />
-
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
 
 
     <!-- FONTS -->
@@ -29,7 +29,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
+    <script type="text/javascript" src="js/jcarousel/jquery.jcarousel.js"></script>
+     <script type="text/javascript" src="js/jcarousel/jcarousel.basic.js"></script>
     <!-- JS -->
 
     <script src="js/jquery.simple-text-rotator.js"></script>
@@ -333,26 +334,27 @@
                             <div class="blur"></div>
                             <div class="caption-text">
                                 <h1>Magazine Spread</h1>
-                                <p>Subtext</p>
+                                <p>"What it's like to live your life online," originally appearing on Dazed Digital</p>
                                 <p class="date">April 2016</p>
                             </div>
                         </div>
-                        <div class="work-dialog">
-                            <div class="row" id="mag-dialog">
+                        <div class="jcarousel-wrapper work-dialog">
 
-                                    <a href="img/design/mag1.png"  data-gallery>
-                                        <img src="img/design/mag1-thumb.png"  >
-                                    </a>
-                                    <a href="img/design/mag2.png" data-gallery>
-                                        <img src="img/design/mag2-thumb.png" >
-                                    </a>
-                                    <a href="img/design/mag3.png" data-gallery>
-                                        <img src="img/design/mag3-thumb.png"  >
-                                    </a>
-                                    <a href="img/design/mag4.png"  data-gallery>
-                                        <img src="img/design/mag4-thumb.png"  >
-                                    </a>
-                                </div>
+                            <div class="jcarousel mag-dialog">
+                                <ul>
+                                    <li><img src="img/design/mag1.png" width="800"/ ></li>
+                                    <li><img src="img/design/mag2.png" width="800"/></li>
+                                    <li><img src="img/design/mag3.png" width="800"/ ></li>
+                                    <li><img src="img/design/mag4.png" width="800"/ ></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                            
+                            <p class="jcarousel-pagination">
+                                
+                            </p>
                         </div>
                     </span>
                     <span class="work-obj art dance">
@@ -375,7 +377,7 @@
                                     <p>music: ^.error - tetsu inoue, burnt norton (interlude) - lana del rey, paris - black atlass</p>
 
                                     <p>choreographed for sarabande dance ensemble at tufts university</p>
-
+                                    <p style="font-size:12px;">APRIL 2016</p>
                                 </div>
                             </div>
                             
@@ -467,10 +469,11 @@
                             </div>
                         </div>
                         <div class="work-dialog">
+                            <div id="photo-description">
 
-
-                            <p><a href="https://www.flickr.com/gp/xlacoeurnoire/pM21Xe">Tufts Consulting Collective</a></p>
-                            <p><a href="https://flic.kr/s/aHskBqes1w">Joy of Motion Youth Dance Company Showcase</a></p>
+                                <p><a href="https://www.flickr.com/gp/xlacoeurnoire/pM21Xe">Tufts Consulting Collective</a></p>
+                                <p><a href="https://flic.kr/s/aHskBqes1w">Joy of Motion Youth Dance Company Showcase</a></p>
+                            </div>
 
                         </div>
                     </span>
@@ -485,11 +488,17 @@
                             </div>
                         </div>
                         <div class="work-dialog">
-                            <div class="work-thumb">
-                                <img class="thumb" src="img/design/rez1.jpg" alt="rez1"/>
-                                <img class="thumb" src="img/design/rez2.jpg" alt="rez2"/>
-                                <img class="thumb" src="img/design/rez3.jpg" alt="rez3"/>
-                            </div>                         
+                            
+                            <img style="width:100%" src="img/design/rez.png" alt="rez1"/>
+                            <div id="rez-description">
+                                <p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
+                                <p>Designed and created with Adobe Photoshop & Illustrator CC</p>
+                                <br><br>
+                                <p style="font-size:12px;">FEBRUARY 2016</p>
+                            </div>
+
+
+                                               
                         </div>
                     </span>
                     <span class="work-obj web design no-dialog" onclick="window.open('http://timbre-music.herokuapp.com');">
@@ -524,12 +533,12 @@
                                 <div class="col-md-7">
                                 <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                                 <div class="col-md-5 description">
-                                    <p class="description-title">a promotional video</p>
+                                    <p class="description-title">audition promo</p>
 
                                     <p>music: all time low - jon bellion</p>
-
                                     <p>filmed and produced for sarabande dance ensemble, tufts university</p>
-                                    <p>choreography by company members</p>
+                                    <p>choreography by company members</p><br><Br>
+                                    <p style="font-size:12px;">SEPTEMBER 2015</p>
 
                                 </div>
                             </div>
@@ -559,8 +568,8 @@
                                     <p class="description-title">"no death, no fear"</p>
 
                                     <p>music: spanish sahara (morso remix) - foals</p>
-                                    <p>choreographed for sarabande dance ensemble, tufts university</p>
-
+                                    <p>choreographed for sarabande dance ensemble, tufts university</p><br><br>
+                                    <p style="font-size:12px;">APRIL 2015</p>
                                 </div>
                             </div>
 
@@ -592,11 +601,11 @@
 
 
         </div>
-        <div class="row">
+<!--        <div class="row">
             <br>
             for a more in-depth look at my artistic pursuits, check out <a href="renderNight()"><span class="night-mode">::night mode::</span></a>
         </div>
-
+-->
 
     </section>
 
@@ -665,6 +674,12 @@
         speed: 2250
         });
         $("#work-detail").hide();
+
+
+
+        $('.jcarousel').jcarousel({
+            // Configuration goes here
+        });
     });
 
 
@@ -725,8 +740,9 @@
 
 
 
-
 </script>
+
+
 </body>
 
 </html>

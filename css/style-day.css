@@ -540,6 +540,47 @@ h1,h2,h3,h4{
 }
 
 
+
+.mag-dialog img{
+ 
+    width:800px;
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
 .description {
     position:relative;
     top:120px;
@@ -553,6 +594,24 @@ h1,h2,h3,h4{
     top:-40px;
     font-size:32px;
     letter-spacing:5px;"
+}
+
+
+#rez-description {
+    position:absolute;
+    z-index:3;
+    top:10%;
+    left:60%;
+    background-color:white;
+    width:35%;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+#photo-description {
+    width:35%;
+    margin:auto;
+    text-align: left;
 }
 
 /* filters */    
@@ -636,7 +695,3 @@ footer {
 }
 
 
-
-#mag-dialog img {
-    height:100px;
-}
