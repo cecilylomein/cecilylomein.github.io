@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">  
+    <link rel="shortcut icon" href="favicon.ico" />
 
 
 
@@ -88,7 +89,7 @@
                 <div class="nav">
                     <div id="home" class="category-nav"><a href="index.html">home</a></div>
                     <div class="category-nav"><a href="#about">about</a></div>
-                    <div class="category-nav"><a href="#work">work</a></div>
+                    <div class="category-nav"><a href="#work-section">work</a></div>
                     <div class="category-nav"><a href="#contact">contact</a></div>
 
                 </div>
@@ -255,11 +256,12 @@
             </div>
 
             <div class="row" id="filter-main"> <!-- FILTERS -->
-                    <a class="filter" onclick="filterArt()">ART</a>
-                    <a class="filter" onclick="filterDesign()">DESIGN</a>
-                    <a class="filter" onclick="filterWeb()">WEB</a>
-                    <a class="filter" onclick="filterVideo()">VIDEO</a>
-                    <a class="filter" onclick="filterDance()">DANCE</a> 
+                    <a class="filter" onclick="reveal('work-obj')">ALL</a>
+                    <a class="filter" onclick="reveal('art')">ART</a>
+                    <a class="filter" onclick="reveal('design')">DESIGN</a>
+                    <a class="filter" onclick="reveal('web')">WEB</a>
+                    <a class="filter" onclick="reveal('video')">VIDEO</a>
+                    <a class="filter" onclick="reveal('dance')">DANCE</a> 
             </div>
 
             <div id="work-container" class="container caption-style-1">
@@ -382,21 +384,21 @@
                         <div class="work-dialog">
 
                             <div class="row work-thumb">
-                                <img class="thumb" src="img/art/eye.png" alt="eye"/>
-                                <img class="thumb" src="img/art/mend.png" alt="mend"/>
-                                <img class="thumb" src="img/art/pp.png" alt="pp"/>
-                                <img class="thumb" src="img/art/god.png" alt="god"/>
-                                <img class="thumb" src="img/art/sorry.png" alt="sorry"/>
-                                <img class="thumb" src="img/art/status.png" alt="status"/>
-                                <img class="thumb" src="img/art/capitalism.png" alt="capitalism"/>
+                                <img name="eye" class="thumb" src="img/art/eye.png" alt="eye"/>
+                                <img name="mend" class="thumb" src="img/art/mend.png" alt="mend"/>
+                                <img name="pp" class="thumb" src="img/art/pp.png" alt="pp"/>
+                                <img name="god" class="thumb" src="img/art/god.png" alt="god"/>
+                                <img name="sorry" class="thumb" src="img/art/sorry.png" alt="sorry"/>
+                                <img name="status" class="thumb" src="img/art/status.png" alt="status"/>
+                                <img name="capitalism" class="thumb" src="img/art/capitalism.png" alt="capitalism"/>
                             </div>
                             <div class="row">
-                                <div class="col-md-2"></div>
-                                <div id="work-closeup" class="col-md-4">
+                                <div class="col-md-1"></div>
+                                <div id="work-closeup" class="col-md-6">
                                 </div>
                                 <div id="work-info" class="col-md-4">
                                 </div>
-                                <div class="col-md-2"></div>
+                                <div class="col-md-1"></div>
                             </div>
 
                         </div>
@@ -537,14 +539,15 @@
                         </div>
                     </span>
                 </div>
-                <div class="row">
-                    <br>
-                    for a more in-depth look at my artistic pursuits, check out <a href="renderNight();"><span class="night-mode">::night mode::</span></a>
-                </div>
+
             </div>
 
 
         </div>
+                        <div class="row">
+                    <br>
+                    for a more in-depth look at my artistic pursuits, check out <a href="renderNight();"><span class="night-mode">::night mode::</span></a>
+                </div>
 
 
     </section>
@@ -554,20 +557,19 @@
     <!-- Footer -->
     <footer>
         <div id="contact" class="container">
-            <div class="row end">END
-            </div>
+            <div class="row end">END</div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
 
-                    <br>
-                        <ul class="list-inline">
-                            <div class="links"><a href="mailto:cecily.lo95@gmail.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a></div>
-                            <div class="links"><a href="https://www.linkedin.com/in/cecily-lo-b29a9b81"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a></div>
-                            <div class="links"><a href="http://github.com/cecilylomein"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a></div>
-                            <div class="links"><a href="http://vimeo.com/cecilylomein"><i class="fa fa-2x fa-vimeo" aria-hidden="true"></i></a></div>
-                        </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Cecily Lo 2016</p>
+
+                <div class="links">
+                    <a href="mailto:cecily.lo95@gmail.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/cecily-lo-b29a9b81"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="http://github.com/cecilylomein"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+                    <a href="http://vimeo.com/cecilylomein"><i class="fa fa-2x fa-vimeo" aria-hidden="true"></i></a>
+                </div>
+
+
+                <p class="text-muted">Copyright &copy; Cecily Lo 2016</p>
                 </div>
             </div>
         </div>
@@ -631,7 +633,8 @@
 
 
         $('.thumb').click(function () {
-            $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/eye.png" alt="eye"/>').show();
+            $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '.png" alt="' + $(this).attr('id') + '"/>').show();
+            $(this).parent().next().find('#work-detail').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '-detail.png" alt="' + $(this).attr('id') + '-detail"/>').show();
             $(this).parent().next().find('#work-info').html('Eye<br>10" x 10"<br>Mixed Media<br>May 2016').show();
         });
 
@@ -648,32 +651,16 @@
         alert('lol this doesn\'t work yet sry');
     }
 
-
-    function filterArt() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
-    function filterDesign() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
-    function filterWeb() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
-    function filterVideo() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
-    function filterDance() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
+    function reveal(element) {
+        $('#work-container span').each(function() {
+            if (!$(this).hasClass(element)) {
+                $(this).animate({opacity:'.1'}, 200);
+            }
+            else {
+                $(this).animate({opacity:'1'}, 200);
+            }
+        });
+    };
 
 
 
