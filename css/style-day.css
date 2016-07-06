@@ -1,3 +1,6 @@
+
+
+
 /* FONTS */
 
 @font-face {
@@ -57,27 +60,16 @@ body {
 }
 
 
+
+
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
 
-
-.header-text {
-    display:block;
-    font-size: 300px;
-    letter-spacing: 20px;
-    font-family:Plexifont;
-
-}
 
 
 /* BUTTON */
@@ -134,25 +126,108 @@ hr.small {
 	top:50px;
 }
 
+
+
+
+
+@media screen and (min-width: 1100px) {
+    .header-text {
+        display:block;
+        font-size: 300px;
+        letter-spacing: 20px;
+        font-family:Plexifont;
+
+    }
+    .category {
+        display:inline-block;
+    }
+    #categories {
+        font-size:60px;
+    }
+    #navbar {
+        font-size: 14px;
+    }
+    #grid {
+        left:60%;
+        top:10%;
+    }
+
+}
+
+@media screen and (min-width: 650px) and (max-width:1099px) {
+    .text-vertical-center img {
+        width:40%;
+    }
+
+    .header-text {
+        display:block;
+        font-size: 200px;
+        letter-spacing: 20px;
+        font-family:Plexifont;
+
+    }
+    .category {
+        display: inline-block;
+    }
+
+    #categories {
+        font-size:48px;
+    }
+    #navbar {
+        font-size: 14px;
+    }
+    #grid {
+        left:40%;
+        top:10%;
+    }
+
+}
+
+
+@media screen and (max-width:649px) {
+    .text-vertical-center img {
+        width:40%;
+    }
+
+    .header-text {
+        display:block;
+        font-size: 100px;
+        letter-spacing: 20px;
+        font-family:Plexifont;
+
+    }
+    .category {
+        display:block;
+    }
+    #categories {
+        font-size:32px;
+    }
+    #navbar {
+        font-size: 10px;
+    }
+    #grid {
+        left:15%;
+        top:10%;
+        opacity:.7;
+    }
+
+}
+
+
 #categories {
     font: Helvetica;
-    font-size:60px;
     position:relative;
     top:25px; 
     width:100%;
     text-align:center;
     z-index: 2;
     background-color:rgba(0, 0, 0, 0);
-    font-weight:400;
-    letter-spacing: 7px;
-
 }
 
 .category {
-  display: inline-block;
-  padding:0 40px;
-  letter-spacing: 0px;
-  font-weight:100;
+    padding:0 40px;
+    letter-spacing: 0px;
+    font-weight:100;
 }
 
 
@@ -173,7 +248,6 @@ hr.small {
     height:50px;
     z-index: 10;
     top: 0;
-    font-size: 14px;
     background-color:rgba(255,255,255,1);
     display:none;
     margin: 5px;
@@ -196,12 +270,9 @@ hr.small {
 }
 
 
-
 #grid {
     position:fixed;
     z-index: 0;
-    left:800px;
-    top:100px;
 }
 
 /* About */
@@ -502,7 +573,7 @@ h1,h2,h3,h4{
 
     font-size:12px;
     font-style:normal;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     position:relative;
     top:20px;
 }
@@ -512,14 +583,19 @@ h1,h2,h3,h4{
     display:none;
 }
 
+.rez-dialog {
+    top:-300px;
+}
+
 .work-thumb {
     display:inline;
 }
 .work-thumb img{
     height:100px;
+    transition: all .2s ease-in-out;
 
 }
-
+.work-thumb img:hover { transform: scale(1.1); }
 
 #work-closeup img {
     width:100%;
@@ -527,7 +603,7 @@ h1,h2,h3,h4{
 
 #work-detail img {
     width:300px;
-
+    z-index: 20;
 }
 
 #work-info {
@@ -545,6 +621,14 @@ h1,h2,h3,h4{
  
     width:800px;
 }
+
+.art-photo-dialog { 
+
+    font-family: Plexifont;
+    font-size:50px;
+
+}
+
 
 /*
 This is the visible area of you carousel.
