@@ -82,7 +82,7 @@
     <!-- Header Page -->
     <header id="top" class="header">
         <div class="row">
-                <div onclick="renderNight()" class="button">SWITCH TO NIGHT</div>
+                <div id="night-button" onclick="renderNight()" class="button">SWITCH TO NIGHT</div>
         </div>
         <div class="text-vertical-center">
             <img src="name.png" alt="cecily lo" class="name-header"/>
@@ -131,7 +131,7 @@
             </div>
 
             <div class="row"> 
-                <div class="col-md-6 roles-main">
+                <div class="col-xs-12 col-md-6 roles-main">
                     <div class="row">
                         <div id="programmer" class="roles">front-end developer
                         </div>
@@ -162,7 +162,7 @@
                         <div class="skillbar clearfix " data-percent="100%">
                             <div class="skillbar-title" style="background: #444444;"><span>MICROSOFT OFFICE</span></div>
                             <div class="skillbar-bar" style="background: #444444;"></div>
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
 
 
@@ -170,19 +170,19 @@
                         <div class="skillbar clearfix " data-percent="95%">
                             <div class="skillbar-title" style="background: #666666;"><span>HTML5 + CSS3</span></div>
                             <div class="skillbar-bar" style="background: #666666;"></div>
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
                
                         <div class="skillbar clearfix " data-percent="82%">
                             <div class="skillbar-title" style="background: #666666;"><span>JAVASCRIPT + JQUERY</span></div>
                             <div class="skillbar-bar" style="background: #666666;"></div>
 
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
                         <div class="skillbar clearfix " data-percent="88%">
                             <div class="skillbar-title" style="background: #888888;"><span>BOOTSTRAP</span></div>
                             <div class="skillbar-bar" style="background: #888888;"></div>
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
 
 
@@ -190,25 +190,28 @@
                             <div class="skillbar-title" style="background: #888888;"><span>WEBGL + THREE.JS</span></div>
                             <div class="skillbar-bar" style="background: #888888;"></div>
 
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
                         <div class="skillbar clearfix " data-percent="92%">
                             <div class="skillbar-title" style="background: #aaaaaa;"><span>ADOBE CREATIVE SUITE</span></div>
                             <div class="skillbar-bar" style="background: #aaaaaa;"></div>
 
-                        </div> <!-- End Skill Bar -->
-
+                        </div> 
+                        <div class="skillbar clearfix " data-percent="69%">
+                            <div class="skillbar-title" style="background: #aaaaaa;"><span>CINEMA 4D</span></div>
+                            <div class="skillbar-bar" style="background: #aaaaaa;"></div>
+                        </div>
 
                         <div class="skillbar clearfix " data-percent="71%">
                             <div class="skillbar-title" style="background: #cccccc;"><span>SPANISH</span></div>
                             <div class="skillbar-bar" style="background: #cccccc;"></div>
 
-                        </div> <!-- End Skill Bar -->
+                        </div> 
                         <div class="skillbar clearfix " data-percent="80%">
                             <div class="skillbar-title" style="background: #cccccc;"><span>MANDARIN</span></div>
                             <div class="skillbar-bar" style="background: #cccccc;"></div>
 
-                        </div> <!-- End Skill Bar -->
+                        </div> 
 
                     </div>
 
@@ -222,9 +225,9 @@
 
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xs-12 col-md-6">
                 </div>
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div id="likes" class="likes-text">
                         <div style="font-size: 24px; font-style:italic;">LIKES:</div>
                         <div>iced coffee</div>
@@ -235,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div id="dislikes" class="likes-text">
                         <div style="font-size: 24px; font-style:italic;">DISLIKES:</div> 
                         <div>caterpillars</div>
@@ -277,6 +280,102 @@
 
             <div id="work-container" class="container caption-style-1">
                 <div class="row">
+
+                    <span class="work-obj art">
+                        <img src="img/art/digital-thumbnail.png" alt="digital-art" />
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text ">
+                                <h1>Digital Art</h1>
+                                <p>Cinema 4D renders, Internet stuff</p>
+                                <p class="date">JUNE 2016 - CURRENT</p>
+                            </div>
+                        </div>
+                        <div class="work-dialog">
+
+
+                            <!--
+
+                            <div class="row work-thumb">
+                                <img name="pool" class="thumb" src="img/art/pool.png" alt="pool"/>
+                                
+                                <img name="bumble" class="thumb" src="img/art/bumble-thumbnail.png" alt="bumble"/>          
+                                <img name="mattdada" class="thumb" src="img/art/mattdada.png" alt="mattdada" />
+        
+
+                                <img name="skull" class="thumb video" src="img/art/skull.png" alt="skull"/> 
+                                <img name="self-portrait" class="thumb video" src="img/art/self-portrait.png" alt="self-portrait"/>
+                                <img name="underwater" class="thumb" src="img/art/underwater.jpg" alt="skull"/>
+                                <img name="yunglean" class="thumb" src="img/art/yunglean.jpg" alt="yung-lean"/>
+                            </div>
+
+
+
+                        
+
+
+                            <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div id="work-closeup" class="col-md-6">
+                                    </div>
+                                    <div id="work-info" class="col-xs-12 col-sm-12 col-md-4">
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div style="display:none;" wid="work-detail"><img src="img/art/eye-detail.png"/></div>
+
+                                    <div class="hidden-info" id="pool-info">
+                                        <span style="font-size:20px;font-weight:400;">Pool</span><br><br>
+                                        mixed media<br>
+                                        june 2016
+                                    </div>
+                                    <div class="hidden-info" id="bumble-info">
+                                        <span style="font-size:20px;font-weight:400;">Bumble</span><br><br>
+                                        mixed media<br>
+                                        june 2016
+                                    </div>
+                                    <div class="hidden-info" id="mattdada-info">
+                                        <span style="font-size:20px;font-weight:400;">matt dada</span><br><br>
+                                        mixed media<br>
+                                        june 2016
+                                    </div>
+                                    <div class="hidden-info" id="god-info">
+                                        <span style="font-size:20px;font-weight:400;">Their Eyes Were Watching God on the L Train</span><br><br>
+                                        mixed media<br>
+                                        may 2016
+
+                                    </div>
+                                    <div class="hidden-info" id="sorry-info">
+                                        <span style="font-size:20px;font-weight:400;">Sorry</span><br><br>
+                                        mixed media<br>
+                                        may 2016
+                                    </div>
+                                    <div class="hidden-info" id="status-info">
+                                        <span style="font-size:20px;font-weight:400;">Somebody, Anybody, Please Like My Status</span><br><br>
+                                        mixed media<br>
+                                        may 2016
+                                    </div>
+                                    <div class="hidden-info" id="capitalism-info">
+                                        <span style="font-size:20px;font-weight:400;">Suck My Capitalism</span><br><br>
+                                        mixed media<br>
+                                        may 2016
+                                    </div>          
+                                    <div class="hidden-info" id="poem1-info">
+                                        <span style="font-size:20px;font-weight:400;">The Coffee Made Me Do It</span><br><br>
+                                        mixed media<br>
+                                        march 2016
+                                    </div>  
+
+                                    <div class="hidden-info" id="poem2-info">
+                                        <span style="font-size:20px;font-weight:400;">Untitled 01</span><br><br>
+                                        mixed media<br>
+                                        january 2016
+                                    </div>   
+                                </div>
+
+                            --> coming soon !
+
+                        </div>
+                    </span>
                     <span class="work-obj web no-dialog" onclick="window.open('http://cecilylomein.github.io/BubbleSim');">
                         <img src="img/bubblesim-thumbnail.png" alt="bubblesim" />
                         <div class="caption">
@@ -289,27 +388,7 @@
                             </div>
                         </div>
                     </span>
-                    <span class="work-obj design">
-                        <img src="img/styleguide-thumbnail.jpg" alt="styleguide" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text long-text">
-                                <h1>V5 Rebrand</h1>
-                                <p>Revamped brand book, merch/website mockups, & client presentation for a Boston-based contemporary dance company</p>
-                                <p class="date">MAY 2016</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
 
-
-
-
-                            CONTENT GOES HERE
-
-
-
-                        </div>
-                    </span>
                     <span class="work-obj art video dance">
                         <img src="img/heaven-thumbnail.jpg" alt="04." />
                         <div class="caption" >
@@ -350,6 +429,8 @@
                                 <p class="date">APRIL 2016</p>
                             </div>
                         </div>
+                        <div class="work-dialog">
+                        <!--
                         <div class="jcarousel-wrapper work-dialog">
 
                             <div class="jcarousel mag-dialog">
@@ -367,7 +448,12 @@
                             <p class="jcarousel-pagination">
                                 
                             </p>
+
+                        -->
+                        coming soon !
                         </div>
+                    
+
                     </span>
                     <span class="work-obj art dance">
                         <img class="work" src="img/montauk-thumbnail.jpg" alt="montauk" />
@@ -384,7 +470,7 @@
                                 <div class="col-md-7">
                                 <iframe src="https://player.vimeo.com/video/165464455?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                                 <div class="col-md-5 description">
-                                    <p class="description-title">a study on the impermanence of human memory</p>
+                                    <p class="description-title">a study on im/permanence</p>
 
                                     <p>music: ^.error - tetsu inoue, burnt norton (interlude) - lana del rey, paris - black atlass</p>
 
@@ -403,7 +489,7 @@
                         <div class="caption">
                             <div class="blur"></div>
                             <div class="caption-text">
-                                <h1>Collage Work & More</h1>
+                                <h1>Collage Work etc.</h1>
                                 <p>Mixed Media</p>
                                 <p class="date">WINTER 2016 - CURRENT</p>
                             </div>
@@ -415,27 +501,23 @@
                                 <img name="mend" class="thumb" src="img/art/mend.png" alt="mend"/>
                                 <img name="pp" class="thumb" src="img/art/pp.png" alt="pp"/>
                                 <img name="god" class="thumb" src="img/art/god.png" alt="god"/>
-            <!--                    <img name="sorry" class="thumb" src="img/art/sorry.png" alt="sorry"/>-->
+
                                 <img name="status" class="thumb" src="img/art/status.png" alt="status"/>
                                 <img name="untitled" class="thumb" src="img/art/untitled.png" alt="untitled"/> 
                                 <img name="poem1" class="thumb" src="img/art/poem1.png" alt="status"/>
-            <!--                    <img name="capitalism" class="thumb" src="img/art/capitalism.png" alt="capitalism"/> -->
-                                <img name="poem2" class="thumb" src="img/art/poem2.png" alt="status"/>
-            <!--                <img name="bumble" class="thumb" src="img/art/bumble.png" alt="bumble"/> -->               <img name="mattdada" class="thumb" src="img/art/mattdada.png" alt="mattdada" />
 
-                                <img name="skull" class="thumb video" src="img/art/skull.png" alt="skull"/>
+                                <img name="poem2" class="thumb" src="img/art/poem2.png" alt="status"/>
                                 <img name="self-portrait" class="thumb video" src="img/art/self-portrait.png" alt="self-portrait"/>
-            <!--                    <img name="underwater" class="thumb" src="img/art/underwater.png" alt="skull"/> -->
-            <!--                    <img name="yunglean" class="thumb" src="img/art/yunglean.png" alt="yung-lean"/> -->
+ 
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
                                 <div id="work-closeup" class="col-md-6">
                                 </div>
-                                <div id="work-info" class="col-md-4">
+                                <div id="work-info" class="col-xs-12 col-sm-12 col-md-4">
                                 </div>
                                 <div class="col-md-1"></div>
-                                <div style="display:none;" id="work-detail"><img src="img/art/eye-detail.png"/></div>
+                                <div style="display:none;" wid="work-detail"><img src="img/art/eye-detail.png"/></div>
 
                                 <div class="hidden-info" id="eye-info">
                                     <span style="font-size:20px;font-weight:400;">eYYYe</span><br><br>
@@ -474,12 +556,13 @@
                                     may 2016
                                 </div>          
                                 <div class="hidden-info" id="poem1-info">
-                                    <span style="font-size:20px;font-weight:400;">Coffee Made Me Do It</span><br><br>
+                                    <span style="font-size:20px;font-weight:400;">The Coffee Made Me Do It</span><br><br>
                                     mixed media<br>
                                     march 2016
-                                </div>                                      
+                                </div>  
+
                                 <div class="hidden-info" id="poem2-info">
-                                    <span style="font-size:20px;font-weight:400;">Addy Made Me Do It</span><br><br>
+                                    <span style="font-size:20px;font-weight:400;">Untitled 01</span><br><br>
                                     mixed media<br>
                                     january 2016
                                 </div>   
@@ -488,21 +571,25 @@
                                     mixed media<br>
                                     march 2016
                                 </div>      
+                                <!--
                                 <div class="hidden-info" id="mattdada-info">
                                     <span style="font-size:20px;font-weight:400;">A Study on the Father Figure</span><br><br>
                                     mixed media<br>
                                     april 2016
                                 </div>  
+                            -->
                                 <div class="hidden-info" id="self-portrait-info">
                                     <span style="font-size:20px;font-weight:400;">self-portrait.mp4</span><br><br>
                                     video (0:15)<br>
                                     february 2016
-                                </div>           
+                                </div> 
+                                <!--          
                                 <div class="hidden-info" id="skull-info">
                                     <span style="font-size:20px;font-weight:400;">hmmmmm</span><br><br>
                                     video (0:05)<br>
                                     january? 2016
                                 </div>  
+                            -->
 
                             </div>
 
@@ -516,15 +603,15 @@
                         <div class="caption">
                             <div class="blur"></div>
                             <div class="caption-text">
-                                <h1>Commissioned Photography</h1>
+                                <h1>Freelance Photography</h1>
                                 <p class="date">MAY 2013 - DEC 2016</p>
                             </div>
                         </div>
                         <div class="work-dialog">
                             <div id="photo-description">
 
-                                <p><a href="https://www.flickr.com/gp/xlacoeurnoire/pM21Xe">Tufts Consulting Collective</a></p>
-                                <p><a href="https://flic.kr/s/aHskBqes1w">Joy of Motion Youth Dance Company Showcase</a></p>
+                                <div class="button long-button" onclick="window.open('https://www.flickr.com/gp/xlacoeurnoire/pM21Xe');">Tufts Consulting Collective</div>
+                                <div class="button long-button" onclick="window.open('https://flic.kr/s/aHskBqes1w');">Joy of Motion Youth Dance Company Showcase</div>
                             </div>
 
                         </div>
@@ -541,7 +628,7 @@
                         </div>
                         <div class="work-dialog rez-dialog long">
                             
-                            <img style="width:100%" src="img/design/rez.png" alt="rez1"/>
+                            <img style="width:90%" src="img/design/rez.png" alt="rez1"/>
                             <div id="rez-description">
                                 <p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
                                 <p>Designed and created with Adobe Photoshop & Illustrator CC</p>
@@ -573,8 +660,8 @@
                           <div class="caption">
                             <div class="blur"></div>
                             <div class="caption-text">
-                                <h1>Promotional Video</h1>
-                                <p>Sarabande Dance Ensemble</p>
+                                <h1>Sarabande</h1>
+                                <p>Directed, filmed, and edited</p>
                                 <p class="date">September 2015</p>
                             </div>
                         </div>
@@ -585,10 +672,10 @@
                                 <div class="col-md-7">
                                 <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                                 <div class="col-md-5 description">
-                                    <p class="description-title">audition promo</p>
+                                    <p class="description-title">a promotional video</p>
 
                                     <p>music: all time low - jon bellion</p>
-                                    <p>filmed and produced for sarabande dance ensemble, tufts university</p>
+                                    <p>directed, filmed, and edited for sarabande dance ensemble, tufts university</p>
                                     <p>choreography by company members</p><br><Br>
                                     <p style="font-size:12px;">SEPTEMBER 2015</p>
 
@@ -638,7 +725,7 @@
                                 <p class="date">FEB 2013 - CURRENT</p>
                             </div>
                         </div>
-                        <div class="work-dialog art-photo-dialog">
+                        <div class="work-dialog ">
 
 
                         <!--
@@ -651,10 +738,9 @@
 
                         -->
 
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/">DISPOSABLE</a>
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/">DIGITAL</a>
-                            <a href="">IPHONE</a>
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/">FILM</a>
+                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/');">DISPOSABLE</div>
+                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/');">DIGITAL</div>
+                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/');">FILM</div>
 
 
                         </div>
