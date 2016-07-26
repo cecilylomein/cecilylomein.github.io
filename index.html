@@ -5,32 +5,31 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
 
 
+    <title>@cecilylomein</title>
+
+    <!-- MAIN STYLESHEETS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
 
 
-    <title>@ceclo</title>
-
-
-    <!-- MOBILE RESPONSIVE STUFF -->
-    <link rel="stylesheet" type="text/css" href="css/mobile-style.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="css/style-day.css" media="screen  and (min-width: 40.5em)" />
-
-    <!-- CSS -->
-    <link href="css/style-day.css" rel="stylesheet">
+    <!-- CSS LIBRARIES -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/text-rotator/simpletextrotator.css">  
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
 
 
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'> 
+
+
 
     <!-- JQUERY -->
 
@@ -40,14 +39,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jcarousel/jquery.jcarousel.js"></script>
      <script type="text/javascript" src="js/jcarousel/jcarousel.basic.js"></script>
-    <!-- JS -->
 
+
+    <!-- JS -->
     <script src="js/jquery.simple-text-rotator.js"></script>
     <script src="js/index.js"></script> 
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
 
 
     <!-- VEX MODAL DIALOG BOXES -->
@@ -66,13 +62,6 @@
     <script src="js/bootstrap.min.js"></script>
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 
 </head>
 
@@ -81,9 +70,10 @@
 
     <!-- Header Page -->
     <header id="top" class="header">
-        <div class="row">
-                <div id="night-button" onclick="renderNight()" class="button">SWITCH TO NIGHT</div>
-        </div>
+        <!-- <div class="row">
+             <div id="night-button" onclick="renderNight()" class="button">SWITCH TO NIGHT</div> 
+        </div> -->
+
         <div class="text-vertical-center">
             <img src="name.png" alt="cecily lo" class="name-header"/>
             <div id="categories" visibility="visible" class="row">
@@ -101,7 +91,6 @@
                     <div class="category-nav"><a href="#about">about</a></div>
                     <div class="category-nav"><a href="#work-section">work</a></div>
                     <div class="category-nav"><a href="#contact">contact</a></div>
-
                 </div>
 
             </div>
@@ -110,7 +99,9 @@
     </header>
 
 
-    <div id="grid"><img src="img/grid.png"/></div>
+    <div id="grid"><img src="img/grid.png"/></div> <!-- fixed background image -->
+
+
 
 
 
@@ -154,13 +145,12 @@
                     <div class="row">
                         <div id="education" class="roles">b.s. computer science, tufts university e'17
                         </div>
-
                     </div>
 
 
                     <div id="skills" class="row skills"> <!-- skill bars -->
                         <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #444444;"><span>MICROSOFT OFFICE</span></div>
+                            <div class="skillbar-title" style="background: #444444;"><span>MS OFFICE</span></div>
                             <div class="skillbar-bar" style="background: #444444;"></div>
                         </div> 
 
@@ -174,7 +164,7 @@
 
                
                         <div class="skillbar clearfix " data-percent="82%">
-                            <div class="skillbar-title" style="background: #666666;"><span>JAVASCRIPT + JQUERY</span></div>
+                            <div class="skillbar-title" style="background: #666666;"><span>JS + JQUERY</span></div>
                             <div class="skillbar-bar" style="background: #666666;"></div>
 
                         </div> 
@@ -193,7 +183,7 @@
                         </div> 
 
                         <div class="skillbar clearfix " data-percent="92%">
-                            <div class="skillbar-title" style="background: #aaaaaa;"><span>ADOBE CREATIVE SUITE</span></div>
+                            <div class="skillbar-title" style="background: #aaaaaa;"><span>ADOBE CC</span></div>
                             <div class="skillbar-bar" style="background: #aaaaaa;"></div>
 
                         </div> 
@@ -234,7 +224,7 @@
                         <div><span class="rotate">james blake; crystal castles; wavves; yung lean; jamie xx; a$ap ferg; explosions in the sky; mura masa; tame impala; ratatat; taking back sunday; grimes; red hot chili peppers; joy division; kendrick lamar; rage against the machine; slayer</span></div>
                         <div>monochromatism</div>
                         <div>stack overflow <3</div>
-                        <div>brunch</div>
+                        
                     </div>
                 </div>
 
@@ -245,7 +235,7 @@
                         <div>whole milk</div>
                         <div>raisins</div>
                         <div>familiarity</div>
-                        <div>ketchup on my fries :(</div>
+                        
                     </div>
                 </div>
 
@@ -762,24 +752,29 @@
 
 
     <!-- Footer -->
+    <section class="contact">
+
+        <p>GET IN TOUCH VIA:</p>
+
+        <p>
+            <a href="mailto:cecily.lo95@gmail.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/cecily-lo-b29a9b81"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+            <a href="http://github.com/cecilylomein"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+            <a href="http://vimeo.com/cecilylomein"><i class="fa fa-2x fa-vimeo" aria-hidden="true"></i></a>
+        </p>
+
+    </section>
+
+
+
+
     <footer>
-        <div id="contact" class="container">
-            <div class="row end">END</div>
-            <div class="row">
 
-
-                <div class="links">
-                    <a href="mailto:cecily.lo95@gmail.com"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/cecily-lo-b29a9b81"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="http://github.com/cecilylomein"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
-                    <a href="http://vimeo.com/cecilylomein"><i class="fa fa-2x fa-vimeo" aria-hidden="true"></i></a>
-                </div>
-
-
-                <p class="text-muted">Copyright &copy; Cecily Lo 2016</p>
-                </div>
-            </div>
-        </div>
+        <div class="row end">END</div>
+        <p class="text-muted">Copyright &copy; Cecily Lo 2016</p>
+                    
+         
+  
     </footer>
 
 

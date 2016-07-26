@@ -11,14 +11,12 @@
 /* GLOBAL */
 
 body {
-
     cursor:crosshair;
 	font-family: Helvetica;
 	font-weight: 200;
 	text-align: center;
     letter-spacing: 3px;
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,sans-serif;
-
 }
 
 section {
@@ -28,7 +26,6 @@ section {
 .glyphicon {
     font-size: 50px;
 }
-
 
 .glyphicon-new-window {
     font-size:14px;
@@ -61,14 +58,11 @@ body {
 
 
 
-
-
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
 
 
 
@@ -95,6 +89,7 @@ body {
     text-transform: uppercase;
     width:400px;
 }
+
 .button:hover {
     background-color: black;
     opacity:.7;
@@ -103,13 +98,6 @@ body {
     
 }
 
-
-
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
 
 
 /* TITLE PAGE */
@@ -520,6 +508,8 @@ hr.small {
     z-index: 0;
 }
 
+
+
 /* About */
 
 #about {
@@ -569,10 +559,7 @@ hr.small {
 
 }
 
-
-
 .rotate {
-
     font-style: italic;
 }
 
@@ -580,8 +567,6 @@ hr.small {
 
 
 /* WORK */
-
-
 
 #work-section{ 
     background:#FFFFFF;
@@ -740,48 +725,6 @@ h1,h2,h3,h4{
 }
 
 
-
-.mag-dialog img{
- 
-    width:800px;
-}
-
-
-/*
-This is the visible area of you carousel.
-Set a width here to define how much items are visible.
-The width can be either fixed in px or flexible in %.
-Position must be relative!
-*/
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-
-/*
-This is the container of the carousel items.
-You must ensure that the position is relative or absolute and
-that the width is big enough to contain all items.
-*/
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-
-    /* Optional, required in this case since it's a <ul> element */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/*
-These are the item elements. jCarousel works best, if the items
-have a fixed width and height (but it's not required).
-*/
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    float: left;
-}
-
 .description {
     position:relative;
     top:120px;
@@ -836,7 +779,7 @@ have a fixed width and height (but it's not required).
     
 }
 
-
+/*
 
 .night-mode {
     position:relative;
@@ -847,34 +790,41 @@ have a fixed width and height (but it's not required).
 .night-mode:hover{
     color:#ebbcbc !important;
     font-size:24px;
-    
 
 }
-/* Footer */
 
 
-.list-inline {
-	display:inline;
+*/
 
+
+
+/* Contact */
+
+
+#contact {
+    padding:400px;
 }
+
 .links {
 	display:inline;
 
-
 }
-
 .links a {
     color:#aaa;
     padding:20px 5px;
 
 }
 
+
 .end {
+    
     font-family: Plexifont;
     font-size:72px;
 
-
 }
+
+
+
 
 .text-muted {
     color:#aaa;
@@ -882,6 +832,8 @@ have a fixed width and height (but it's not required).
     font-size:10px;
     letter-spacing: 2px;
 }
+
+
 footer {
     padding: 100px 0;
     background: #eeeeee; /* For browsers that do not support gradients */
