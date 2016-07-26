@@ -231,10 +231,10 @@ body {
     font-style: italic;
 }
 
-
-
-
-
+.skills {
+    position:relative;
+    left:-20px;
+}
 .skillbar {
     position:relative;
     display:block;
@@ -297,8 +297,6 @@ body {
 }
 
 
-
-
 .likes-text {
     display:inline-block;
     background-color:#fefefe;
@@ -307,11 +305,9 @@ body {
     text-align: right;
     letter-spacing: 3px;
     z-index: 3;
-    position:relative;
-    top:-280px;
     font-size: 12px;
-    width:220px;
-
+    width:180px;
+    margin:0 10px;
 
 }
 
@@ -321,12 +317,11 @@ body {
 #work-section{ 
     background:#FFFFFF;
     color:black;
-    padding-bottom:600px;
-
+    margin:500px 0;
 }
 
 #work-header {
-    font-size:60px;
+
     padding:100px 0;
 }
 
@@ -513,13 +508,14 @@ h1,h2,h3,h4{
 
 
 #filter-main {
-    padding:50px 0;
+    margin:50px 0;
 }
+
 .filter {
     position:relative;
     color: black;
     display:inline;
-    padding: 20px;
+    margin: 20px;
     letter-spacing: 5px;
 }
 
@@ -553,12 +549,13 @@ h1,h2,h3,h4{
 
 
 .contact {
-    margin:auto;
+    margin:500px auto;
     width:40%;
     padding:100px 150px;
     border-style:solid;
     border-width: 2px;
     border-color:#222;
+
 }
 
 
@@ -577,13 +574,12 @@ h1,h2,h3,h4{
 }
 
 
-
-
 .text-muted {
+    text-transform: uppercase;
     color:#aaa;
-    padding-top:50px;
+
     font-size:10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 
@@ -620,46 +616,35 @@ footer {
         left:60%;
         top:10%;
     }
-
-    #me-pic {
+    #me-pic{
         position:relative;
-        top:-100px;
+        top:-50px;
+
+        margin:20px 0;
     }
 
-
-    .skills {
-        width:95%;
-        padding-top:100px;
-        position:relative;
-        left:70px;
-    }
     #likes {
-        margin-right:-60px;
+
     }
     #dislikes {
-        margin-left:-60px;
+
         text-align: left;
     }
     #night-button {
         position:absolute;
         left:100px;
     }
-
-
     #education {
         font-size:10px;
         left:150px;
-        top:-10px;
+
     }
     #designer, #artist, #internet {
         font-size:22px;
     }
 
-    #designer {
-        top:-20px;
-    }
     #choreo { 
-        top:-30px;
+        top:-20px;
     }
 
     #internet {
@@ -669,6 +654,8 @@ footer {
     #frenchfry {
         top:20px;
     }
+
+
 }
 
 
