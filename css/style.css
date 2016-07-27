@@ -185,10 +185,10 @@ body {
 
 #about {
     background: #eeeeee; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#a5a5a5, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#a5a5a5, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#a5a5a5, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#a5a5a5, white); /* Standard syntax */
+    background: -webkit-linear-gradient(#a5a5a5, #f0f0f0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a5a5a5, #f0f0f0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a5a5a5, #f0f0f0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a5a5a5, #f0f0f0); /* Standard syntax */
     color:black;
 }
 
@@ -206,13 +206,6 @@ body {
     color:#333333;
 }
 
-
-#square-glyphicon {
-    position:relative;
-    font-size:32px;
-    color:#444444;
-    top:-1px;
-}
 
 
 
@@ -298,7 +291,6 @@ body {
 
 
 .likes-text {
-
     background-color:#fefefe;
     padding: 80px 10px;
     opacity:.9;
@@ -308,7 +300,6 @@ body {
     font-size: 12px;
     width:200px;
     margin:0 10px;
-
 }
 
 
@@ -317,7 +308,13 @@ body {
 #work-section { 
     background:#FFFFFF;
     color:black;
-    margin:300px 0;
+    padding:300px 0;
+    background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f0f0f0, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f0f0f0, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f0f0f0, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f0f0f0, #fff); /* Standard syntax */
+    color:black;
 }
 
 #work-header {
@@ -620,11 +617,21 @@ footer {
         left:60%;
         top:10%;
     }
+
+
+
+    #square-glyphicon {
+        position:relative;
+        font-size:32px;
+        color:#444444;
+        top:-1px;
+    }
+
     .roles-main {
         position:relative;
         left:-50px;
     }
-    
+
     #me-pic{
         position:relative;
         top:-50px;
@@ -635,11 +642,14 @@ footer {
 
     #likes {
         position:relative;
-        left:20px;  
+        left:50px;  
       
     }
     #dislikes {
         text-align: left;
+        position:relative;
+        left:-15px;
+        top:40px;
     }
     /*
     #night-button {
@@ -670,7 +680,13 @@ footer {
         top:20px;
     }
 
-*/
+    #mobile-alert {
+        display:none;
+    }
+
+
+
+
 }
 
 
