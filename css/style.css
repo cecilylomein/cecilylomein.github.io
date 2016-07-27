@@ -190,6 +190,7 @@ body {
     background: -moz-linear-gradient(#a5a5a5, #f0f0f0); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#a5a5a5, #f0f0f0); /* Standard syntax */
     color:black;
+    padding-bottom:500px;
 }
 
 #about-header-section {
@@ -306,15 +307,12 @@ body {
 /* WORK */
 
 #work-section { 
-    background:#FFFFFF;
     color:black;
-    padding:300px 0;
     background: #fff; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#f0f0f0, #fff); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#f0f0f0, #fff); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#f0f0f0, #fff); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#f0f0f0, #fff); /* Standard syntax */
-    color:black;
 }
 
 #work-header {
@@ -549,8 +547,12 @@ h1,h2,h3,h4{
 /* Contact */
 
 
-.contact {
+#contact-section {
     margin:500px auto;
+}
+
+.contact {
+    margin:auto;
     width:40%;
     padding:100px 150px;
     border-style:solid;
