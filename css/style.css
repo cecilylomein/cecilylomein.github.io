@@ -6,11 +6,11 @@
 }
 
 
-
 /* GLOBAL */
 
 body {
-
+    width:100%;
+    overflow-x:hidden;
     cursor:crosshair;
     font-family: Helvetica;
     font-weight: 200;

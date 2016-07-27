@@ -55,13 +55,11 @@
     }
 
     #grid {
-        left:20%;
+
         top:10%;
         opacity:.8;
     }    
-    #grid img {
-        width:280px;
-    }
+
     #square-glyphicon {
         position:relative;
         font-size:20px;
