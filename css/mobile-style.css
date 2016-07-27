@@ -1,12 +1,8 @@
 @media only screen and (max-device-width: 649px)  {
 
     body{
-        position:relative;
-        overflow-x:hidden;
-        width:100%;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
+        overflow-x:hidden !important;
+        width:100% !important;
     }
     .header {
         background: url(../img/mobile-bg.jpg) auto 100% no-repeat scroll;
