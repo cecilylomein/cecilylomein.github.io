@@ -66,9 +66,8 @@
     }
 
     #grid {
-
         top:10%;
-        opacity:.8;
+        opacity:.7;
     }    
 
     #square-glyphicon {
@@ -173,7 +172,7 @@
         position:relative;
         margin:200px auto;
         width:80%;
-        padding:20px 15px;
+        padding:20px 0;
 
     }
     #work-section { 
