@@ -617,9 +617,6 @@ footer {
         left:60%;
         top:10%;
     }
-
-
-
     #square-glyphicon {
         position:relative;
         font-size:32px;
@@ -637,9 +634,6 @@ footer {
         top:-50px;
         left:-50px;
     }
-
-
-
     #likes {
         position:relative;
         left:50px;  
@@ -683,7 +677,9 @@ footer {
     #mobile-alert {
         display:none;
     }
-
+    #scroll-down {
+        display:none;
+    }
 
 
 

@@ -7,10 +7,21 @@
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
     }
-
+    .header {
+        background: url(../img/mobile-bg.jpg) auto 100% no-repeat scroll;
+    }
 
     .text-vertical-center img {
-        width:60%;
+        position:relative;
+        top:-50px;
+        width:75%;
+    }
+    #scroll-down {
+        position:relative;
+        top:200px;
+    }
+    #scroll-down img {
+        width:75px;
     }
 
     .header-text {
@@ -33,15 +44,10 @@
         line-height: 95%;
         letter-spacing: 0px;
         font-size:36px;
-
-
-    }
-    .category {
-        display:block;
     }
 
     #categories {
-        font-size:32px;
+        display:none !important;
     }
 
     #navbar {
@@ -73,26 +79,34 @@
 
 
     .skills {
-        width:40%;
-        margin:50px 5px;
+        margin:50px 0;
+    }
+    .skillbar-title {
+        text-align: left;
+    }
+    .skillbar-title span {
+        background:rgba(0, 0, 0, 0);
+
     }
 
     #me-pic{
-       margin:50px 0;
+        margin:50px 0;
         width:92%;
     }
 
     .likes-text {
         padding:30px 10px;
-        margin:10px 10px;
+        margin:10px auto;
     }
 
     #likes  {
         position:relative;
-        left:120px;
+        left:30px;
     }
 
     #dislikes {
+        position:relative;
+        left:-30px;
         text-align: left;
 
     }
@@ -124,7 +138,8 @@
     }
     #internet {
         top:20px;
-        left:15px;
+        left:10px;
+        font-size:18px;
     }
     #education {
         left:-10px;
