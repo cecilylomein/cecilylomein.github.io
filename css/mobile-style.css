@@ -18,10 +18,10 @@
     }
     #scroll-down {
         position:relative;
-        top:200px;
+        top:190px;
     }
     #scroll-down img {
-        width:75px;
+        width:100px;
     }
 
     .header-text {
@@ -55,10 +55,13 @@
     }
 
     #grid {
-        left:15%;
+        left:20%;
         top:10%;
-        opacity:.7;
+        opacity:.8;
     }    
+    #grid img {
+        width:280px;
+    }
     #square-glyphicon {
         position:relative;
         font-size:20px;
@@ -179,4 +182,5 @@
     .text-muted {
         font-size:12px;
     }
+
 }
