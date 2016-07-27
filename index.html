@@ -43,7 +43,7 @@
 
     <!-- JS -->
     <script src="js/jquery.simple-text-rotator.js"></script>
-    <script src="js/index.js"></script> 
+
 
 
     <!-- VEX MODAL DIALOG BOXES -->
@@ -57,19 +57,21 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
-
 </head>
+
+
+
+
+
 
 <body>
 
-
     <!-- Header Page -->
     <header id="top" class="header">
+
         <!-- <div class="row">
              <div id="night-button" onclick="renderNight()" class="button">SWITCH TO NIGHT</div> 
         </div> -->
@@ -77,24 +79,18 @@
         <div class="text-vertical-center">
             <img src="name.png" alt="cecily lo" class="name-header"/>
             <div id="categories" visibility="visible" class="row">
-                    <div class="category"><a href="#about">about</a>
-                    </div>
-                    <div class="category"><a href="#work-section">work</a>
-                    </div>
-                    <div class="category"><a href="#contact-section">contact</a>
-                    </div>
+                    <div class="category"><a href="#about">about</a></div>
+                    <div class="category"><a href="#work-section">work</a></div>
+                    <div class="category"><a href="#contact-section">contact</a></div>
             </div>
-            <div id="navbar" visibility="hidden" class="container-fluid">
-
+            <div id="navbar" visibility="hidden" class="container-fluid"> 
                 <div class="nav">
                     <div id="home" class="category-nav"><a href="index.html">home</a></div>
                     <div class="category-nav"><a href="#about">about</a></div>
                     <div class="category-nav"><a href="#work-section">work</a></div>
                     <div class="category-nav"><a href="#contact-section">contact</a></div>
                 </div>
-
             </div>
-
         </div>
     </header>
 
@@ -108,20 +104,17 @@
     <!-- About -->
 
     <section id="about">
-        <div class="container">
-            <div class="row header-text" id="about-header-section">
-                    who ?
-            </div>
+        <div class="header-text" id="about-header-section">
+                who ?
+        </div>
 
-            <div class="row" id="about-text-section">
-                <div class="container-fluid">
-                My creative pursuits revolve around the intersection between the digital and artistic spheres. as an interdisciplinary designer and innovative problem-solver, i believe in transcending the boundaries between media as a means to communicate.  <span id="square-glyphicon" class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+        <div id="about-text-section"> <!-- bio text -->
+            My creative pursuits revolve around the intersection between the digital and artistic spheres. as an interdisciplinary designer and innovative problem-solver, i believe in transcending the boundaries between media as a means to communicate.  <span id="square-glyphicon" class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+        </div>
 
 
-                </div>
-            </div>
-
-            <div class="row"> 
+        <div class="about-container container"> 
+            <div class="row"> <!-- top row -->
                 <div class="col-xs-12 col-md-7 roles-main">
                     <div class="row">
                         <div id="programmer" class="roles">front-end developer
@@ -148,15 +141,16 @@
                     </div>
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-xs-12 col-md-5">
                     <img id="me-pic" src="img/me-circle.png" alt="me"/>
                 </div>
 
-            <div>
+            </div>
 
 
-            <div class="row">
-                <div class="col-md-1"></div>
+            <div class="row">  <!-- bottom row -->
+
+                <!-- filler -->
 
                 <div id="skills" class="skills col-xs-12 col-md-6"> <!-- skill bars -->
                     <div class="skillbar clearfix " data-percent="100%">
@@ -211,7 +205,7 @@
                     </div> 
                 </div>
 
-                <div class="col-xs-12 col-md-2">
+                <div class="col-xs-12 col-md-3" style="position:relative;left:50px;"> <!-- likes/dislikes -->
                     <div id="likes" class="likes-text">
                         <div style="font-size: 24px; font-style:italic;">LIKES:</div>
                         <div>iced coffee</div>
@@ -221,7 +215,7 @@
                         
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-2">
+                <div class="col-xs-12 col-md-3">
                     <div id="dislikes" class="likes-text">
                         <div style="font-size: 24px; font-style:italic;">DISLIKES:</div> 
                         <div>caterpillars</div>
@@ -233,8 +227,6 @@
                 </div>
 
             </div>
-
-
 
 
         </div>
@@ -249,494 +241,457 @@
 
 
     <section id="work-section">
-        <div class="container-fluid">
 
-            <div class="row header-text" id="work-header">
-                what ?
+        <div class="header-text" id="work-header">
+            what ?
+        </div>
+
+        <div id="filter-main"> <!-- filters -->
+                <a class="filter" onclick="reveal('work-obj')">ALL</a>
+                <a class="filter" onclick="reveal('art')">ART</a>
+                <a class="filter" onclick="reveal('design')">DESIGN</a>
+                <a class="filter" onclick="reveal('web')">WEB</a>
+                <a class="filter" onclick="reveal('video')">VIDEO</a>
+                <a class="filter" onclick="reveal('dance')">DANCE</a> 
+        </div>
+
+        <div id="work-container" class="container-fluid caption-style-1">
+            <div class="row">
+                <span class="work-obj art"> <!-- Digital Art -->
+                    <img src="img/digital-thumbnail.png" alt="digital-art" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text ">
+                            <h1>Digital Art</h1>
+                            <p>Cinema 4D renders, Internet stuff</p>
+                            <p class="date">SPRING 2016 - CURRENT</p>
+                        </div>
+                    </div>
+
+                    <div class="work-dialog"> <!-- ** TO DO ** -->
+<!--
+                        
+                        <div class="row work-thumb"> 
+                            <img name="pool" class="thumb video" src="img/art/pool-thumbnail.png" alt="pool"/>
+                            <img name="bumble" class="thumb" src="img/art/bumble-thumbnail.png" alt="bumble"/>          
+                            <img name="mattdada" class="thumb" src="img/art/mattdada.png" alt="mattdada" />
+                            <img name="skull" class="thumb video" src="img/art/skull.png" alt="skull"/> 
+                            <img name="self-portrait" class="thumb video" src="img/art/self-portrait.png" alt="self-portrait"/>
+                            <img name="underwater" class="thumb" src="img/art/underwater.png" alt="skull"/>
+                            <img name="yunglean" class="thumb" src="img/art/yunglean.png" alt="yung-lean"/>
+                        </div>
+
+
+                        <div class="row"> 
+                                
+                            <div id="work-closeup" class="col-md-6"></div>
+                            <div id="work-info" class="col-md-6"></div>
+                            
+                            <div class="hidden-info" id="pool-info">
+                                <span class="title">h2o</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="bumble-info">
+                                <span class="title">idk</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="mattdada-info">
+                                <span class="title">A Study On The Father Figure</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="skull-info">
+                                <span class="title">!important;</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+
+                            </div>
+                            <div class="hidden-info" id="self-portrait-info">
+                                <span class="title">self-portrait.mp4</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>
+                            <div class="hidden-info" id="underwater-info">
+                                <span class="title">:) :) :) :)</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>
+                            <div class="hidden-info" id="yunglean-info">
+                                <span class="title">yung sertraline</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>   
+                        </div>       
+                    -->
+                          coming soon ! 
+                    </div>
+                </span>
+
+                <span class="work-obj web no-dialog" onclick="window.open('http://cecilylomein.github.io/BubbleSim');"> <!-- Bubble Sim -->
+                    <img src="img/bubblesim-thumbnail.png" alt="bubblesim" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>BubbleSim <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
+                            <p>Interactive 3D Bubble Simulator written with WebGL & three.js</p>
+                            <p class="date">MAY 2016
+                            </p>
+                        </div>
+                    </div>
+                </span>
+
+                <span class="work-obj art video dance"> <!-- Heaven -->
+                    <img src="img/heaven-thumbnail.jpg" alt="04." />
+                    <div class="caption" >
+                        <div class="blur"></div>
+                        <div class="caption-text long-text" >
+                            <h1>04. Does it get dark in heaven too?</h1>
+                            <p>Self-choreographed, filmed, & produced</p>
+                            <p class="date">MAY 2016</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
+                        <div class="row">
+                            <div class="col-md-7">
+                            <iframe src="https://player.vimeo.com/video/164029361?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="col-md-5 description">
+                                <p class="description-title">(someone let me know when they find out, thx)</p>
+                                <p>self-choreographed, filmed, and produced</p>
+
+
+                                <p>music: station - lapsley</p><br>
+                                <p style="font-size:12px;">MAY 2016</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </span>
             </div>
 
-            <div class="row" id="filter-main"> <!-- FILTERS -->
-                    <a class="filter" onclick="reveal('work-obj')">ALL</a>
-                    <a class="filter" onclick="reveal('art')">ART</a>
-                    <a class="filter" onclick="reveal('design')">DESIGN</a>
-                    <a class="filter" onclick="reveal('web')">WEB</a>
-                    <a class="filter" onclick="reveal('video')">VIDEO</a>
-                    <a class="filter" onclick="reveal('dance')">DANCE</a> 
-            </div>
+            <div class="row">
+                <span class="work-obj design"> <!-- Magazine -->
+                    <img class="work" src="img/mag-thumbnail.jpg" alt="magazine" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Magazine Spread</h1>
+                            <p>"What it's like to live your life online," originally appearing on Dazed Digital</p>
+                            <p class="date">APRIL 2016</p>
+                        </div>
+                    </div>
 
-            <div id="work-container" class="container-fluid caption-style-1">
-                <div class="row">
+                    <div class="work-dialog"> <!-- ** TO DO ** -->
 
-                    <span class="work-obj art">
-                        <img src="img/art/digital-thumbnail.png" alt="digital-art" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text ">
-                                <h1>Digital Art</h1>
-                                <p>Cinema 4D renders, Internet stuff</p>
-                                <p class="date">JUNE 2016 - CURRENT</p>
+                    <!--
+                    
+                    <div class="jcarousel-wrapper work-dialog">
+
+                        <div class="jcarousel mag-dialog">
+                            <ul>
+                                <li><img src="img/design/mag1.png" width="800"/ ></li>
+                                <li><img src="img/design/mag2.png" width="800"/></li>
+                                <li><img src="img/design/mag3.png" width="800"/ ></li>
+                                <li><img src="img/design/mag4.png" width="800"/ ></li>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                        
+                        <p class="jcarousel-pagination">
+                            
+                        </p>
+
+                    -->
+                    coming soon !
+                    </div>
+                </span>
+                <span class="work-obj art dance"> <!-- Montauk -->
+                    <img class="work" src="img/montauk-thumbnail.jpg" alt="montauk" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>"Meet Me In Montauk"</h1>
+                            <p>Choreographed for Sarabande Dance Ensemble</p>
+                            <p class="date">APRIL 2016</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
+                        <div class="row">
+                            <div class="col-md-7">
+                            <iframe src="https://player.vimeo.com/video/165464455?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="col-md-5 description">
+                                <p class="description-title">a study on im/permanence</p>
+
+                                <p>music: ^.error - tetsu inoue, burnt norton (interlude) - lana del rey, paris - black atlass</p>
+
+                                <p>choreographed for sarabande dance ensemble at tufts university</p>
+                                <p style="font-size:12px;">APRIL 2016</p>
                             </div>
                         </div>
-                        <div class="work-dialog">
+                        
+                        
 
+                    </div>
+                </span>
 
-                            <!--
+                <span class="work-obj art"> <!-- Collage --> <!-- ** TO DO ** -->
+                    <img class="work" src="img/art-thumbnail.png" alt="art" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Collage, etc.</h1>
+                            <p>Mixed Media</p>
+                            <p class="date">WINTER 2016 - CURRENT</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
 
-                            <div class="row work-thumb">
-                                <img name="pool" class="thumb" src="img/art/pool.png" alt="pool"/>
-                                
-                                <img name="bumble" class="thumb" src="img/art/bumble-thumbnail.png" alt="bumble"/>          
-                                <img name="mattdada" class="thumb" src="img/art/mattdada.png" alt="mattdada" />
-        
+                        <div class="row work-thumb"> <!-- thumbnails -->
+                            <img name="eye" class="thumb" src="img/art/eye.png" alt="eye"/>
+                            <img name="mend" class="thumb" src="img/art/mend.png" alt="mend"/>
+                            <img name="pp" class="thumb" src="img/art/pp.png" alt="pp"/>
+                            <img name="god" class="thumb" src="img/art/god.png" alt="god"/>
+                            <img name="status" class="thumb" src="img/art/status.png" alt="status"/>
+                            <img name="untitled" class="thumb" src="img/art/untitled.png" alt="untitled"/> 
+                            <img name="poem1" class="thumb" src="img/art/poem1.png" alt="status"/>
+                            <img name="poem2" class="thumb" src="img/art/poem2.png" alt="status"/>
 
-                                <img name="skull" class="thumb video" src="img/art/skull.png" alt="skull"/> 
-                                <img name="self-portrait" class="thumb video" src="img/art/self-portrait.png" alt="self-portrait"/>
-                                <img name="underwater" class="thumb" src="img/art/underwater.jpg" alt="skull"/>
-                                <img name="yunglean" class="thumb" src="img/art/yunglean.jpg" alt="yung-lean"/>
+                        </div>
+                        <div class="row"> <!-- closeups -->
+                            
+                            <div id="work-closeup" class="col-md-6">
                             </div>
+                            <div id="work-info" class="col-xs-12 col-sm-12 col-md-6">
+                            </div>
+                            
+<!--
+                            <div style="display:none;" id="work-detail"><img src="img/art/eye-detail.png"/></div>
+-->
+                            <div class="hidden-info" id="eye-info">
+                                <span class="title">eYYYe</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="mend-info">
+                                <span class="title">I am on The Mend</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="pp-info">
+                                <span class="title">P</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">june 2016</span>
+                            </div>
+                            <div class="hidden-info" id="god-info">
+                                <span class="title">Their Eyes Were Watching God on the L Train</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+
+                            </div>
+                            <div class="hidden-info" id="sorry-info">
+                                <span class="title">Sorry</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>
+                            <div class="hidden-info" id="status-info">
+                                <span class="title">Somebody, Anybody, Please Like My Status</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>
+                            <div class="hidden-info" id="capitalism-info">
+                                <span class="title">Suck My Capitalism</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">may 2016</span>
+                            </div>          
+                            <div class="hidden-info" id="poem1-info">
+                                <span class="title">The Coffee Made Me Do It</span><br><br>
+                                reappropriated cardboard<br><br>
+                                <span class="date">march 2016</span>
+                            </div>  
+
+                            <div class="hidden-info" id="poem2-info">
+                                <span class="title">Untitled 01</span><br><br>
+                                magnet letters<br><br>
+                                <span class="date">january 2016</span>
+                            </div>   
+                            <div class="hidden-info" id="untitled-info">
+                                <span class="title">Untitled 02</span><br><br>
+                                mixed media<br><br>
+                                <span class="date">march 2016</span>
+                            </div>      
+                            <!--
+                            <div class="hidden-info" id="mattdada-info">
+                                <span style="font-size:20px;font-weight:400;">A Study on the Father Figure</span><br><br>
+                                mixed media<br>
+                                <span class="date">april 2016</span>
+                            </div>  
+                        -->
 
 
+                        </div>
 
+                    </div>
+                </span>
+
+            </div>
+            <div class="row">
+                <span class="work-obj design"> <!-- Freelance Photo -->
+                    <img class="work" src="img/tcc-thumbnail.jpg" alt="tcc" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Freelance Photography</h1>
+                            <p class="date">MAY 2013 - DEC 2016</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
+                        <div id="photo-description">
+
+                            <div class="button long-button" onclick="window.open('https://www.flickr.com/gp/xlacoeurnoire/pM21Xe');">Tufts Consulting Collective</div>
+                            <div class="button long-button" onclick="window.open('https://flic.kr/s/aHskBqes1w');">Joy of Motion Youth Dance Company Showcase</div>
+                        </div>
+
+                    </div>
+                </span>
+                <span class="work-obj design"> <!-- Rez -->
+                    <img class="work" src="img/rez-thumbnail.png" alt="rez" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Poster Ads</h1>
+                            <p>Designed for local coffeeshop, <span style="font-style:italic;">The Rez</span></p>
+                            <p class="date">FEBRUARY 2016</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog rez-dialog long">
+                        
+                        <img style="width:80%" src="img/design/rez.png" alt="rez1"/>
+                        <div id="rez-description">
+                            <p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
+                            <p>Designed and created with Adobe Photoshop & Illustrator CC</p>
+                            <br><br>
+                            <p style="font-size:12px;">FEBRUARY 2016</p>
+                        </div>
+
+
+                                           
+                    </div>
+                </span>
+                <span class="work-obj web design no-dialog" onclick="window.open('http://timbre-music.herokuapp.com');"> <!-- Timbre -->
+                    <img class="work" src="img/timbre-thumbnail.jpg" alt="timbre" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text long-text">
+                            <h1>Timbre Music <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
+                            <p>A web application designed to connect musicians for impromptu jams/practice sessions</p>
+                            <p class="date">DECEMBER 2015
+                            </p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="row">
+                <span class="work-obj video dance"> <!-- Sarabande Promo -->
+                    <img class="work" src="img/sarabande-thumbnail.jpg" alt="sarabande"/>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Sarabande</h1>
+                            <p>Directed, filmed, and edited</p>
+                            <p class="date">September 2015</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
+
+                        
+                        <div class="row">
+                            <div class="col-md-7">
+                            <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="col-md-5 description">
+                                <p class="description-title">a promotional video</p>
+
+                                <p>music: all time low - jon bellion</p>
+                                <p>directed, filmed, and edited for sarabande dance ensemble, tufts university</p>
+                                <p>choreography by company members</p><br><Br>
+                                <p style="font-size:12px;">SEPTEMBER 2015</p>
+
+                            </div>
+                        </div>
+                        
+
+                    </div>                        
+                </span>
+
+                <span class="work-obj art dance"> <!-- Samsara -->
+                    <img class="work" src="img/samsara-thumbnail.jpg" alt="samsara" />
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Samsara</h1>
+                            <p>Choreographed for Sarabande Dance Ensemble</p>
+                            <p class="date">APRIL 2015</p>
+                        </div>
+                    </div>
+                    <div class="work-dialog">
                         
 
 
-                            <div class="row">
-                                    <div class="col-md-1"></div>
-                                    <div id="work-closeup" class="col-md-6">
-                                    </div>
-                                    <div id="work-info" class="col-xs-12 col-sm-12 col-md-4">
-                                    </div>
-                                    <div class="col-md-1"></div>
-                                    <div style="display:none;" wid="work-detail"><img src="img/art/eye-detail.png"/></div>
+                        <div class="row">
+                            <div class="col-md-7">
+                            <iframe src="https://player.vimeo.com/video/165465064?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                            <div class="col-md-5 description">
+                                <p class="description-title">"no death, no fear"</p>
 
-                                    <div class="hidden-info" id="pool-info">
-                                        <span style="font-size:20px;font-weight:400;">Pool</span><br><br>
-                                        mixed media<br>
-                                        june 2016
-                                    </div>
-                                    <div class="hidden-info" id="bumble-info">
-                                        <span style="font-size:20px;font-weight:400;">Bumble</span><br><br>
-                                        mixed media<br>
-                                        june 2016
-                                    </div>
-                                    <div class="hidden-info" id="mattdada-info">
-                                        <span style="font-size:20px;font-weight:400;">matt dada</span><br><br>
-                                        mixed media<br>
-                                        june 2016
-                                    </div>
-                                    <div class="hidden-info" id="god-info">
-                                        <span style="font-size:20px;font-weight:400;">Their Eyes Were Watching God on the L Train</span><br><br>
-                                        mixed media<br>
-                                        may 2016
-
-                                    </div>
-                                    <div class="hidden-info" id="sorry-info">
-                                        <span style="font-size:20px;font-weight:400;">Sorry</span><br><br>
-                                        mixed media<br>
-                                        may 2016
-                                    </div>
-                                    <div class="hidden-info" id="status-info">
-                                        <span style="font-size:20px;font-weight:400;">Somebody, Anybody, Please Like My Status</span><br><br>
-                                        mixed media<br>
-                                        may 2016
-                                    </div>
-                                    <div class="hidden-info" id="capitalism-info">
-                                        <span style="font-size:20px;font-weight:400;">Suck My Capitalism</span><br><br>
-                                        mixed media<br>
-                                        may 2016
-                                    </div>          
-                                    <div class="hidden-info" id="poem1-info">
-                                        <span style="font-size:20px;font-weight:400;">The Coffee Made Me Do It</span><br><br>
-                                        mixed media<br>
-                                        march 2016
-                                    </div>  
-
-                                    <div class="hidden-info" id="poem2-info">
-                                        <span style="font-size:20px;font-weight:400;">Untitled 01</span><br><br>
-                                        mixed media<br>
-                                        january 2016
-                                    </div>   
-                                </div>
-
-                            --> coming soon !
-
-                        </div>
-                    </span>
-                    <span class="work-obj web no-dialog" onclick="window.open('http://cecilylomein.github.io/BubbleSim');">
-                        <img src="img/bubblesim-thumbnail.png" alt="bubblesim" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>BubbleSim <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
-                                <p>Interactive 3D Bubble Simulator written with WebGL & three.js</p>
-                                <p class="date">MAY 2016
-                                </p>
+                                <p>music: spanish sahara (morso remix) - foals</p>
+                                <p>choreographed for sarabande dance ensemble, tufts university</p><br><br>
+                                <p style="font-size:12px;">APRIL 2015</p>
                             </div>
                         </div>
-                    </span>
 
-                    <span class="work-obj art video dance">
-                        <img src="img/heaven-thumbnail.jpg" alt="04." />
-                        <div class="caption" >
-                            <div class="blur"></div>
-                            <div class="caption-text long-text" >
-                                <h1>04. Does it get dark in heaven too?</h1>
-                                <p>Self-choreographed, filmed, & produced</p>
-                                <p class="date">MAY 2016</p>
-                            </div>
+                    </div>
+                </span>
+
+                <span class="work-obj art"> <!-- Art Photo -->
+                    <img class="work" src="img/photo-thumbnail.jpg" alt="art photography"/>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text long-text">
+                            <h1>Art Photography</h1>
+                            <p>Shot with 35mm, holga, disposable, & digital</p>
+                            <p class="date">FEB 2013 - CURRENT</p>
                         </div>
-                        <div class="work-dialog">
-                            <div class="row">
-                                <div class="col-md-7">
-                                <iframe src="https://player.vimeo.com/video/164029361?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                                <div class="col-md-5 description">
-                                    <p class="description-title">(someone let me know when they find out, thx)</p>
-                                    <p>self-choreographed, filmed, and produced</p>
+                    </div>
+                    <div class="work-dialog ">
 
 
-                                    <p>music: station - lapsley</p>
+                    <!--
 
-                                </div>
+                        
+                        <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/"><img width="300" src="img/art/disposable-thumb1.png" alt="disposable"/></a>
+                        <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/"><img width="300" src="img/art/digital-thumb1.png" alt="digital"/></a><br>
+                        <a href=""><img width="300" src="img/art/iphone-thumb1.png" alt="iphone"/></a>
+                        <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/"><img width="300" src="img/art/film-thumb1.png" alt="film"/></a>
 
-                            </div>
+                    -->
 
-                        </div>
-                    </span>
-                </div>
-
-                <div class="row">
-                    <span class="work-obj design">
-                        <img class="work" src="img/mag-thumbnail.jpg" alt="magazine" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Magazine Spread</h1>
-                                <p>"What it's like to live your life online," originally appearing on Dazed Digital</p>
-                                <p class="date">APRIL 2016</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-                        <!--
-                        <div class="jcarousel-wrapper work-dialog">
-
-                            <div class="jcarousel mag-dialog">
-                                <ul>
-                                    <li><img src="img/design/mag1.png" width="800"/ ></li>
-                                    <li><img src="img/design/mag2.png" width="800"/></li>
-                                    <li><img src="img/design/mag3.png" width="800"/ ></li>
-                                    <li><img src="img/design/mag4.png" width="800"/ ></li>
-                                </ul>
-                            </div>
-
-                            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-                            
-                            <p class="jcarousel-pagination">
-                                
-                            </p>
-
-                        -->
-                        coming soon !
-                        </div>
-                    
-
-                    </span>
-                    <span class="work-obj art dance">
-                        <img class="work" src="img/montauk-thumbnail.jpg" alt="montauk" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>"Meet Me In Montauk"</h1>
-                                <p>Choreographed for Sarabande Dance Ensemble</p>
-                                <p class="date">APRIL 2016</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-                            <div class="row">
-                                <div class="col-md-7">
-                                <iframe src="https://player.vimeo.com/video/165464455?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                                <div class="col-md-5 description">
-                                    <p class="description-title">a study on im/permanence</p>
-
-                                    <p>music: ^.error - tetsu inoue, burnt norton (interlude) - lana del rey, paris - black atlass</p>
-
-                                    <p>choreographed for sarabande dance ensemble at tufts university</p>
-                                    <p style="font-size:12px;">APRIL 2016</p>
-                                </div>
-                            </div>
-                            
-                            
-
-                        </div>
-                    </span>
-
-                    <span class="work-obj art">
-                        <img class="work" src="img/art-thumbnail.png" alt="art" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Collage Work etc.</h1>
-                                <p>Mixed Media</p>
-                                <p class="date">WINTER 2016 - CURRENT</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-
-                            <div class="row work-thumb">
-                                <img name="eye" class="thumb" src="img/art/eye.png" alt="eye"/>
-                                <img name="mend" class="thumb" src="img/art/mend.png" alt="mend"/>
-                                <img name="pp" class="thumb" src="img/art/pp.png" alt="pp"/>
-                                <img name="god" class="thumb" src="img/art/god.png" alt="god"/>
-
-                                <img name="status" class="thumb" src="img/art/status.png" alt="status"/>
-                                <img name="untitled" class="thumb" src="img/art/untitled.png" alt="untitled"/> 
-                                <img name="poem1" class="thumb" src="img/art/poem1.png" alt="status"/>
-
-                                <img name="poem2" class="thumb" src="img/art/poem2.png" alt="status"/>
-                                <img name="self-portrait" class="thumb video" src="img/art/self-portrait.png" alt="self-portrait"/>
- 
-                            </div>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <div id="work-closeup" class="col-md-6">
-                                </div>
-                                <div id="work-info" class="col-xs-12 col-sm-12 col-md-4">
-                                </div>
-                                <div class="col-md-1"></div>
-                                <div style="display:none;" wid="work-detail"><img src="img/art/eye-detail.png"/></div>
-
-                                <div class="hidden-info" id="eye-info">
-                                    <span style="font-size:20px;font-weight:400;">eYYYe</span><br><br>
-                                    mixed media<br>
-                                    june 2016
-                                </div>
-                                <div class="hidden-info" id="mend-info">
-                                    <span style="font-size:20px;font-weight:400;">I am on The Mend</span><br><br>
-                                    mixed media<br>
-                                    june 2016
-                                </div>
-                                <div class="hidden-info" id="pp-info">
-                                    <span style="font-size:20px;font-weight:400;">P</span><br><br>
-                                    mixed media<br>
-                                    june 2016
-                                </div>
-                                <div class="hidden-info" id="god-info">
-                                    <span style="font-size:20px;font-weight:400;">Their Eyes Were Watching God on the L Train</span><br><br>
-                                    mixed media<br>
-                                    may 2016
-
-                                </div>
-                                <div class="hidden-info" id="sorry-info">
-                                    <span style="font-size:20px;font-weight:400;">Sorry</span><br><br>
-                                    mixed media<br>
-                                    may 2016
-                                </div>
-                                <div class="hidden-info" id="status-info">
-                                    <span style="font-size:20px;font-weight:400;">Somebody, Anybody, Please Like My Status</span><br><br>
-                                    mixed media<br>
-                                    may 2016
-                                </div>
-                                <div class="hidden-info" id="capitalism-info">
-                                    <span style="font-size:20px;font-weight:400;">Suck My Capitalism</span><br><br>
-                                    mixed media<br>
-                                    may 2016
-                                </div>          
-                                <div class="hidden-info" id="poem1-info">
-                                    <span style="font-size:20px;font-weight:400;">The Coffee Made Me Do It</span><br><br>
-                                    mixed media<br>
-                                    march 2016
-                                </div>  
-
-                                <div class="hidden-info" id="poem2-info">
-                                    <span style="font-size:20px;font-weight:400;">Untitled 01</span><br><br>
-                                    mixed media<br>
-                                    january 2016
-                                </div>   
-                                <div class="hidden-info" id="untitled-info">
-                                    <span style="font-size:20px;font-weight:400;">Untitled 02</span><br><br>
-                                    mixed media<br>
-                                    march 2016
-                                </div>      
-                                <!--
-                                <div class="hidden-info" id="mattdada-info">
-                                    <span style="font-size:20px;font-weight:400;">A Study on the Father Figure</span><br><br>
-                                    mixed media<br>
-                                    april 2016
-                                </div>  
-                            -->
-                                <div class="hidden-info" id="self-portrait-info">
-                                    <span style="font-size:20px;font-weight:400;">self-portrait.mp4</span><br><br>
-                                    video (0:15)<br>
-                                    february 2016
-                                </div> 
-                                <!--          
-                                <div class="hidden-info" id="skull-info">
-                                    <span style="font-size:20px;font-weight:400;">hmmmmm</span><br><br>
-                                    video (0:05)<br>
-                                    january? 2016
-                                </div>  
-                            -->
-
-                            </div>
-
-                        </div>
-                    </span>
-
-                </div>
-                <div class="row">
-                    <span class="work-obj design">
-                        <img class="work" src="img/tcc-thumbnail.jpg" alt="tcc" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Freelance Photography</h1>
-                                <p class="date">MAY 2013 - DEC 2016</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-                            <div id="photo-description">
-
-                                <div class="button long-button" onclick="window.open('https://www.flickr.com/gp/xlacoeurnoire/pM21Xe');">Tufts Consulting Collective</div>
-                                <div class="button long-button" onclick="window.open('https://flic.kr/s/aHskBqes1w');">Joy of Motion Youth Dance Company Showcase</div>
-                            </div>
-
-                        </div>
-                    </span>
-                    <span class="work-obj design">
-                        <img class="work" src="img/rez-thumbnail.png" alt="rez" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Poster Ads</h1>
-                                <p>Designed for local coffeeshop, <span style="font-style:italic;">The Rez</span></p>
-                                <p class="date">FEBRUARY 2016</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog rez-dialog long">
-                            
-                            <img style="width:90%" src="img/design/rez.png" alt="rez1"/>
-                            <div id="rez-description">
-                                <p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
-                                <p>Designed and created with Adobe Photoshop & Illustrator CC</p>
-                                <br><br>
-                                <p style="font-size:12px;">FEBRUARY 2016</p>
-                            </div>
+                        <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/');">DISPOSABLE</div>
+                        <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/');">DIGITAL</div>
+                        <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/');">FILM</div>
 
 
-                                               
-                        </div>
-                    </span>
-                    <span class="work-obj web design no-dialog" onclick="window.open('http://timbre-music.herokuapp.com');">
-                        <img class="work" src="img/timbre-thumbnail.jpg" alt="timbre" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text long-text">
-                                <h1>Timbre Music <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></h1>
-                                <p>A web application designed to connect musicians for impromptu jams/practice sessions</p>
-                                <p class="date">DECEMBER 2015
-                                </p>
-                            </div>
-                        </div>
-   
-                    </span>
-                </div>
-                <div class="row">
-                    <span class="work-obj video dance">
-                        <img class="work" src="img/sarabande-thumbnail.jpg" alt="sarabande"/>
-                          <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Sarabande</h1>
-                                <p>Directed, filmed, and edited</p>
-                                <p class="date">September 2015</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-
-                            
-                            <div class="row">
-                                <div class="col-md-7">
-                                <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                                <div class="col-md-5 description">
-                                    <p class="description-title">a promotional video</p>
-
-                                    <p>music: all time low - jon bellion</p>
-                                    <p>directed, filmed, and edited for sarabande dance ensemble, tufts university</p>
-                                    <p>choreography by company members</p><br><Br>
-                                    <p style="font-size:12px;">SEPTEMBER 2015</p>
-
-                                </div>
-                            </div>
-                            
-
-                        </div>                        
-                    </span>
-
-                    <span class="work-obj art dance">
-                        <img class="work" src="img/samsara-thumbnail.jpg" alt="samsara" />
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Samsara</h1>
-                                <p>Choreographed for Sarabande Dance Ensemble</p>
-                                <p class="date">APRIL 2015</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog">
-                            
-
-
-                            <div class="row">
-                                <div class="col-md-7">
-                                <iframe src="https://player.vimeo.com/video/165465064?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                                <div class="col-md-5 description">
-                                    <p class="description-title">"no death, no fear"</p>
-
-                                    <p>music: spanish sahara (morso remix) - foals</p>
-                                    <p>choreographed for sarabande dance ensemble, tufts university</p><br><br>
-                                    <p style="font-size:12px;">APRIL 2015</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </span>
-
-                    <span class="work-obj art">
-                        <img class="work" src="img/photo-thumbnail.jpg" alt="art photography"/>
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text long-text">
-                                <h1>Art Photography</h1>
-                                <p>Shot with 35mm, holga, disposable, & digital</p>
-                                <p class="date">FEB 2013 - CURRENT</p>
-                            </div>
-                        </div>
-                        <div class="work-dialog ">
-
-
-                        <!--
-
-                            
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/"><img width="300" src="img/art/disposable-thumb1.png" alt="disposable"/></a>
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/"><img width="300" src="img/art/digital-thumb1.png" alt="digital"/></a><br>
-                            <a href=""><img width="300" src="img/art/iphone-thumb1.png" alt="iphone"/></a>
-                            <a href="https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/"><img width="300" src="img/art/film-thumb1.png" alt="film"/></a>
-
-                        -->
-
-                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670323727145/');">DISPOSABLE</div>
-                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670322707055/');">DIGITAL</div>
-                            <div  class="button" onclick="window.open('https://www.flickr.com/photos/xlacoeurnoire/sets/72157670118617075/');">FILM</div>
-
-
-                        </div>
-                    </span>
-                </div>
-
+                    </div>
+                </span>
             </div>
 
-
         </div>
+
+
+     
 <!--        <div class="row">
             <br>
             for a more in-depth look at my artistic pursuits, check out <a href="renderNight()"><span class="night-mode">::night mode::</span></a>
@@ -747,7 +702,7 @@
 
 
 
-    <!-- Footer -->
+    <!-- Contact Me -->
     <section id="contact-section" class="contact">
 
         <p>GET IN TOUCH VIA:</p>
@@ -758,146 +713,22 @@
             <a href="http://github.com/cecilylomein"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
             <a href="http://vimeo.com/cecilylomein"><i class="fa fa-2x fa-vimeo" aria-hidden="true"></i></a>
         </p>
-
     </section>
 
 
 
 
     <footer>
-
         <div class="row end">END</div>
         <p class="text-muted">Copyright &copy; Cecily Lo 2016</p>
-                    
-         
-  
+        <!-- ** TO DO ** : ADD CREDITS HERE -->
     </footer>
 
 
     
 
 
-
-
-<script>
-
-
-
-
-    var target = $('#categories').offset().top;
-    var skilltarget = $('#skills').offset().top;
-    var scrollBottom;
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > target) {
-            $('#navbar').fadeIn();
-            $('#categories').fadeOut();
-        } else {
-            $('#categories').fadeIn();
-            $('#navbar').fadeOut();   
-        }
-
-
-
-        scrollBottom = $(window).scrollTop() + $(window).height();
-        if (scrollBottom > skilltarget) {
-            $('.skillbar').each(function(){
-                $(this).find('.skillbar-bar').animate({
-                width:$(this).attr('data-percent')
-                },3000);
-            });
-        }
-    });
-
-    $(document).ready(function() {
-        $(".rotate").textrotator({
-            animation: "fade",
-            separator: "; ",
-        speed: 2250
-        });
-        $("#work-detail").hide();
-
-
-
-        $('.jcarousel').jcarousel({
-            // Configuration goes here
-        });
-    });
-
-
-
-    $('.work-obj').click(function() {
-
-        if (!($(this).is('.no-dialog'))) {
-            var d = $(this).children('.work-dialog');
-
-            vex.dialog.open({
-                message: d.html(),
-                buttons: []
-            });
-        } 
-
-
-        $('.thumb').click(function () {
-
-            // check width settings for video
-            // make thumbnails one line (scrolling carousel)
-
-            if ($(this).is('.video')) {
-                $(this).parent().next().find('#work-closeup').html('<video width="600" controls><source src="img/art/' + $(this).attr('name') + '.mp4" type="video/mp4">Your browser does not support the video tag.</video>').show();
-
-
-            } else {
-
-                $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '.png" alt="' + $(this).attr('id') + '"/>').show();
-
-
-            }
-                var info = '#' + $(this).attr('name') + '-info';
-                var infotext = $(this).parent().next().find(info).html();
-                $(this).parent().next().find('#work-info').html(infotext).show();
-/*
-                $(this).parent().next().find('#work-closeup').hover(function(e) {
-                    $('#work-detail img').css({top: event.clientY, left: event.clientX}).show();
-
-                    console.log("here");
-                }, function() {
-                    $('#work-detail img').hide();
-                });
-
-            
-*/
-
-
-        });
-
-
-
-    });
-
-  
-
-
-
-    function renderNight() {
-
-        alert('lol this doesn\'t work yet sry');
-    }
-
-    function reveal(element) {
-        $('#work-container .work-obj').each(function() {
-            if (!$(this).hasClass(element)) {
-                $(this).animate({opacity:'.1'}, 200);
-            }
-            else {
-                $(this).animate({opacity:'1'}, 200);
-            }
-        });
-    };
-
-
-
-</script>
-
+    <script src="js/index.js"></script> 
 
 </body>
 

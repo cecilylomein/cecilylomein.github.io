@@ -7,7 +7,6 @@
 
 
 
-
 /* GLOBAL */
 
 body {
@@ -84,7 +83,7 @@ body {
     position:relative;
     display:inline-block;
     font-family: Helvetica;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     color:black;
     letter-spacing: 2px;
@@ -92,7 +91,7 @@ body {
 
 .long-button {
     text-transform: uppercase;
-    width:400px;
+    width:450px;
 }
 
 .button:hover {
@@ -199,8 +198,7 @@ body {
 }
 
 #about-text-section {
-    margin:300px 50px;
-    margin-top:100px;
+    margin:0px 100px 200px 100px;
     text-align: justify;
     line-height: 95%;
     letter-spacing: 0px;
@@ -216,6 +214,13 @@ body {
     top:-1px;
 }
 
+
+
+
+.about-container {
+    padding:110px 0;
+}
+
 .roles {
     display:inline-block;
     background-color: white;
@@ -224,23 +229,18 @@ body {
     margin:10px;
     position:relative;
 
-
 }
 
 .rotate {
     font-style: italic;
 }
 
-.skills {
-    position:relative;
-    left:-20px;
-}
 .skillbar {
     position:relative;
     display:block;
-    margin-bottom:10px;
+    margin-bottom:5px;
     background:#eee;
-    height:20px;
+    height:25px;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -277,9 +277,9 @@ body {
 .skillbar-title span {
     display:block;
     background:rgba(0, 0, 0, 0.1);
-    padding:0 20px;
-    height:20px;
-    line-height:20px;
+    padding:0 10px;
+    height:25px;
+    line-height:25px;
     -webkit-border-top-left-radius:3px;
     -webkit-border-bottom-left-radius:3px;
     -moz-border-radius-topleft:3px;
@@ -289,7 +289,7 @@ body {
 }
 
 .skillbar-bar {
-    height:20px;
+    height:25px;
     width:0px;
     border-radius:3px;
     -moz-border-radius:3px;
@@ -298,15 +298,15 @@ body {
 
 
 .likes-text {
-    display:inline-block;
+
     background-color:#fefefe;
-    padding: 100px 10px;
+    padding: 80px 10px;
     opacity:.9;
     text-align: right;
     letter-spacing: 3px;
     z-index: 3;
     font-size: 12px;
-    width:180px;
+    width:200px;
     margin:0 10px;
 
 }
@@ -314,15 +314,22 @@ body {
 
 /* WORK */
 
-#work-section{ 
+#work-section { 
     background:#FFFFFF;
     color:black;
-    margin:500px 0;
+    margin:300px 0;
 }
 
 #work-header {
+    margin:50px 0;
+}
 
-    padding:100px 0;
+#work-container {
+    display: block;
+    margin: auto;
+    text-align:center;
+    width:920px;
+
 }
 
 
@@ -335,41 +342,25 @@ body {
 
 }
 
-#work-container {
-    display: block;
-    margin: auto;
-    text-align:center;
-    width:920px;
 
-}
+/* CAPTIONS (on hover) */
 
-
-/* captions */
 h1,h2,h3,h4{
     padding: 0px;
     margin: 0px;
 }
-
 .caption-style-1{
-    list-style-type: none;
-
-    
+    list-style-type: none; 
 }
-
 .caption-style-1 .work-obj{
     float: left;
     padding: 2px;
     position: relative;
     overflow: hidden;
 }
-
 .caption-style-1 .work-obj:hover .caption{
     opacity: 1;
-    
-
 }
-
-
 .caption-style-1 img{
     margin: 0px;
     padding: 0px;
@@ -377,8 +368,6 @@ h1,h2,h3,h4{
     z-index: 4;
     opacity:.92;
 }
-
-
 .caption-style-1 .caption{
     cursor: crosshair;
     position: absolute;
@@ -414,7 +403,6 @@ h1,h2,h3,h4{
     padding:0 10px;
 
 }
-
 .caption-style-1 .long-text {
     top:50px;
 }
@@ -434,75 +422,6 @@ h1,h2,h3,h4{
 }
 
 
-.work-dialog {
-    display:none;
-}
-
-.rez-dialog {
-    top:-300px;
-}
-
-.work-thumb {
-    display:inline;
-}
-.work-thumb img{
-    height:100px;
-    transition: all .2s ease-in-out;
-
-}
-.work-thumb img:hover { transform: scale(1.1); }
-
-#work-closeup img {
-    width:100%;
-}
-
-#work-detail img {
-    width:300px;
-    z-index: 20;
-}
-
-#work-info {
-    position:relative;
-    top:100px;
-}
-
-.hidden-info {
-    display:none;
-}
-
-
-.description {
-    position:relative;
-    top:120px;
-    text-align: left;
-    letter-spacing: 1.5px;
-}
-
-.description-title {
-    line-height: 28px;
-    position:relative;
-    top:-40px;
-    font-size:32px;
-    letter-spacing:5px;"
-}
-
-
-#rez-description {
-    position:absolute;
-    z-index:3;
-    top:10%;
-    left:60%;
-    background-color:white;
-    width:35%;
-    text-align: right;
-    letter-spacing: 2px;
-}
-
-#photo-description {
-    width:35%;
-    margin:auto;
-    text-align: left;
-}
 
 /* filters */    
 
@@ -542,6 +461,91 @@ h1,h2,h3,h4{
 
 
 */
+
+
+
+/* INFO DIALOGS */
+
+.work-dialog {
+    display:none;
+}
+.work-thumb {
+    display:inline;
+}
+.work-thumb img{
+    height:100px;
+    transition: all .2s ease-in-out;
+}
+.work-thumb img:hover { 
+    transform: scale(1.1); 
+}
+#work-closeup {
+    margin:20px 0;
+    padding:0 100px;
+    width:730px;
+}
+#work-closeup img {
+    max-height:450px;
+    max-width:600px;
+}
+
+#work-info {
+    position:relative;
+    top:80px;
+    width:400px;
+    text-align:left;
+
+}
+#work-info .title {
+    font-size:32px;
+    letter-spacing: 5px;
+
+}
+#work-info .date {
+    position:relative;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+.hidden-info {
+    display:none;
+}
+
+
+
+
+.description {
+    position:relative;
+    top:120px;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.description-title {
+    line-height: 28px;
+    position:relative;
+    top:-40px;
+    font-size:32px;
+    letter-spacing:5px;"
+}
+
+
+#rez-description {
+    position:absolute;
+    z-index:3;
+    top:10%;
+    left:60%;
+    background-color:white;
+    width:35%;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+#photo-description {
+    width:35%;
+    margin:auto;
+    text-align: left;
+}
 
 
 
@@ -598,7 +602,7 @@ footer {
 
 
 
-/* LARGE STYLE ONLY */
+/* POSITIONING FOR DESKTOP STYLE */
 
 @media screen and (min-width: 650px) {
     .header-text {
@@ -616,24 +620,35 @@ footer {
         left:60%;
         top:10%;
     }
+    .roles-main {
+        position:relative;
+        left:-50px;
+    }
+    
     #me-pic{
         position:relative;
         top:-50px;
-
-        margin:20px 0;
+        left:-50px;
     }
+
+
 
     #likes {
-
+        position:relative;
+        left:20px;  
+      
     }
     #dislikes {
-
         text-align: left;
     }
+    /*
     #night-button {
         position:absolute;
         left:100px;
     }
+    */
+
+
     #education {
         font-size:10px;
         left:150px;
@@ -655,7 +670,7 @@ footer {
         top:20px;
     }
 
-
+*/
 }
 
 
