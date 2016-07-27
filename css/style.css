@@ -601,7 +601,7 @@ footer {
 
 /* POSITIONING FOR DESKTOP STYLE */
 
-@media screen and (min-width: 650px) {
+@media only screen and (min-device-width: 650px) {
     .header-text {
         display:block;
         font-size: 300px;
