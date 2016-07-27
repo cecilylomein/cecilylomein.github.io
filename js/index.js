@@ -1,4 +1,3 @@
-
 var target = $('#categories').offset().top;
 var skilltarget = $('#skills').offset().top;
 var scrollBottom;
@@ -10,15 +9,12 @@ $(window).scroll(function() {
         $('#categories').fadeIn();
         $('#navbar').fadeOut();   
     }
-
-
-
     scrollBottom = $(window).scrollTop() + $(window).height();
     if (scrollBottom > skilltarget) {
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
             width:$(this).attr('data-percent')
-            },3000);
+            },1800);
         });
     }
 });
@@ -47,50 +43,25 @@ $('.work-obj').click(function() {
 
 
     $('.thumb').click(function () {
-
-        // check width settings for video
-        // make thumbnails one line (scrolling carousel)
-
         if ($(this).is('.video')) {
             $(this).parent().next().find('#work-closeup').html('<video width="600" controls><source src="img/art/' + $(this).attr('name') + '.mp4" type="video/mp4">Your browser does not support the video tag.</video>').show();
-
-
         } else {
-
             $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '.png" alt="' + $(this).attr('id') + '"/>').show();
-
-
         }
             var info = '#' + $(this).attr('name') + '-info';
             var infotext = $(this).parent().next().find(info).html();
             $(this).parent().next().find('#work-info').html(infotext).show();
-/*
-            $(this).parent().next().find('#work-closeup').hover(function(e) {
-                $('#work-detail img').css({top: event.clientY, left: event.clientX}).show();
-
-                console.log("here");
-            }, function() {
-                $('#work-detail img').hide();
-            });
-
-        
-*/
-
 
     });
-
-
-
 });
 
 
 
 
-
+/*
 function renderNight() {
-
-    alert('lol this doesn\'t work yet sry');
 }
+*/
 
 function reveal(element) {
     $('#work-container .work-obj').each(function() {
