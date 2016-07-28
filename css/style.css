@@ -36,7 +36,7 @@ a:link {
     text-decoration:none !important;
 }
 a:visited{
-    color:black;
+    color:black !important;
     text-decoration:none;
 }
 
@@ -296,8 +296,8 @@ body {
 
 .likes-text {
     background-color:#fefefe;
-    padding: 80px 10px;
-    opacity:.9;
+    padding: 80px 25px;
+    opacity:.8;
     text-align: right;
     letter-spacing: 3px;
     z-index: 3;
@@ -383,7 +383,7 @@ body {
 .contact {
     margin:auto;
     width:40%;
-    padding:100px 150px;
+    padding:100px 0;
     border-style:solid;
     border-width: 2px;
     border-color:#222;
