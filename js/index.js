@@ -26,6 +26,8 @@ $(document).ready(function() {
     speed: 2250
     });
     $("#work-detail").hide();
+
+
 });
 
 

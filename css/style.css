@@ -182,10 +182,10 @@ body {
 
 #about {
     background: #eeeeee; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#a5a5a5, #f0f0f0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#a5a5a5, #f0f0f0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#a5a5a5, #f0f0f0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#a5a5a5, #f0f0f0); /* Standard syntax */
+    background: -webkit-linear-gradient(#a5a5a5, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#a5a5a5, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#a5a5a5, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#a5a5a5, #fff); /* Standard syntax */
     color:black;
     padding-bottom:500px;
 }
@@ -263,6 +263,11 @@ body {
     -moz-border-radius-bottomleft:3px;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
+    opacity:.4;
+}
+
+.skillbar-title:hover {
+    opacity:1;
 }
 
 .skillbar-title span {
@@ -277,6 +282,7 @@ body {
     -moz-border-radius-bottomleft:3px;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
+
 }
 
 .skillbar-bar {
@@ -306,10 +312,6 @@ body {
 #work-section { 
     color:black;
     background: #fff; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#f0f0f0, #fff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#f0f0f0, #fff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#f0f0f0, #fff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#f0f0f0, #fff); /* Standard syntax */
 }
 
 #work-header {
@@ -667,7 +669,7 @@ footer {
         position:absolute;
         z-index:3;
         top:10%;
-        left:60%;
+        left:55%;
         background-color:white;
         width:35%;
         text-align: right;
@@ -683,8 +685,21 @@ footer {
     #rez-mobile {
         display:none !important;
     }
+    .owl-carousel {
+        position:absolute;
+        z-index: 10;
+    }
+    .owl-carousel .item {
+        margin:10px;
 
-    
+    }
+    .owl-carousel .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
 }
 
 

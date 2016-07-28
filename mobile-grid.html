@@ -126,20 +126,7 @@
 
         </div>
     </span>
-
-    <span class="work-obj art"> <!-- Digital Art -->
-        <img src="img/digital-thumbnail.png" alt="digital-art" />
-
-
-        <div class="work-dialog">
-        	<h2>digital art:</h2>
-        	coming soon ! 
-        </div>
-    </span>
-</div>
-
-<div class="row">
-	<span class="work-obj art dance"> <!-- Montauk -->
+    <span class="work-obj art dance"> <!-- Montauk -->
         <img class="work" src="img/montauk-thumbnail.jpg" alt="montauk" />
         <div class="work-dialog">
             <div class="row">
@@ -159,6 +146,21 @@
 
         </div>
     </span>
+
+</div>
+
+<div class="row">
+
+    <span class="work-obj art"> <!-- Digital Art -->
+        <img src="img/digital-thumbnail.png" alt="digital-art" />
+
+
+        <div class="work-dialog">
+        	<h2>digital art:</h2>
+        	coming soon ! 
+        </div>
+    </span>
+	
 	
     <span class="work-obj design"> <!-- Magazine -->
         <img class="work" src="img/mag-thumbnail.jpg" alt="magazine" />
@@ -173,6 +175,13 @@
 
         <div class="work-dialog"> <!-- ** TO DO ** -->
 
+        	<div id="magazine-carousel" class="owl-carousel">
+			  <div> <img src="img/design/mag1.png" width="300"/ ></div>
+			  <div> <img src="img/design/mag2.png" width="300"/> </div>
+			  <div> <img src="img/design/mag3.png" width="300"/ > </div>
+			  <div> <img src="img/design/mag4.png" width="300"/ ></div>
+
+			</div>
         <!--
         
         <div class="jcarousel-wrapper work-dialog">
@@ -194,7 +203,7 @@
             </p>
 
         -->
-        coming soon !
+    
         </div>
     </span>
 
@@ -316,6 +325,8 @@
 
 
 <script>
+
+    $("#magazine-carousel").owlCarousel();
 
 	$('.work-obj').click(function() {
 	    

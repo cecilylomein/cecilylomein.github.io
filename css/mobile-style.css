@@ -236,9 +236,13 @@
 
     .caption {display:none !important;}
 
+    .work-thumb {
+        padding:0;
+    }
     .work-thumb img{
-        height:70px;
-        margin:3px 0;
+        height:40px;
+        margin:2px 0;
+
     }
     .work-dialog {
         margin-bottom:50px;
@@ -255,7 +259,8 @@
     }
     #work-closeup img {
         max-width:300px;
-        margin:10px;
+        max-height:400px;
+
     }
 
     #work-info {
@@ -310,5 +315,7 @@
     #rez {
         display:none !important;
     }
+
+
 
 }
