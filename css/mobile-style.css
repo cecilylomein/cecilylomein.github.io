@@ -13,10 +13,10 @@
 */
 
     .header {
-        background: -webkit-linear-gradient(white,#b5b5b5); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(white,#b5b5b5); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(white,#b5b5b5); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(white,#b5b5b5); /* Standard syntax */
+        background: -webkit-linear-gradient(white,#ccc); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(white,#ccc); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(white,#ccc); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(white,#ccc); /* Standard syntax */
         
     }
     .text-vertical-center img {
@@ -27,6 +27,7 @@
     #scroll-down {
         position:relative;
         top:190px;
+        z-index:20;
     }
     #scroll-down img {
         width:100px;
@@ -41,10 +42,10 @@
     }
     #about {
         background: #fff; /* For browsers that do not support gradients */
-        background: -webkit-linear-gradient(#b5b5b5, #fff); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#b5b5b5, #fff); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#b5b5b5,#fff); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#b5b5b5, #fff); /* Standard syntax */
+        background: -webkit-linear-gradient(#888, #fff); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#888, #fff); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#888,#fff); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#888, #fff); /* Standard syntax */
         color:black;
         padding-bottom:500px;
     }
@@ -101,9 +102,13 @@
     }
     .skillbar-title {
         text-align: left;
+        opacity: .8;
+        
     }
     .skillbar-title span {
         background:rgba(0, 0, 0, 0);
+        font-weight:400;
+        opacity:1;
 
     }
 
