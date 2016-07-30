@@ -316,10 +316,15 @@
 
 
 
-
-    #rez {
-        display:none !important;
+    #rez-caption {
+        text-align:left;
     }
+
+    #rez-caption .date {
+        font-size:10px;
+        text-transform: uppercase;
+    }
+
 
 
     .carousel-control .glyphicon {
