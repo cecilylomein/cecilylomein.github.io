@@ -173,9 +173,10 @@
             </div>
         </div>
 
-        <div id="mag-dialog" class="work-dialog"> <!-- ** TO DO ** -->
-
-        	<div id="mag-carousel" class="carousel slide" data-ride="carousel">
+        <div class="work-dialog"> <!-- ** TO DO ** -->
+            <div id="mag-caption">MAGAZINE CAPTION GOES HERE
+            </div>
+            <div id="mag-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             
                 <div class="carousel-inner">
                     <div class="item active">
@@ -184,11 +185,10 @@
                     </div>
                     <div class="item">
                       <img class="img-responsive" src="img/design/mag2.png" alt="mag2"/>
-
+  
                     </div>
                     <div class="item">
                       <img class="img-responsive" src="img/design/mag3.png" alt="mag3"/>
-                      
 
                     </div>
                     <div class="item">
@@ -206,7 +206,6 @@
                 </a>
 
             </div>
-
         </div>
     
         <!--
@@ -249,7 +248,7 @@
 
         </div>
     </span>
-    <span class="work-obj design"> <!-- Rez -->
+    <span id="rez-obj" class="work-obj design"> <!-- Rez -->
         <img class="work" src="img/rez-thumbnail.png" alt="rez" />
         <div class="caption">
             
@@ -259,19 +258,39 @@
                 <p class="date">FEBRUARY 2016</p>
             </div>
         </div>
-        <div class="work-dialog rez-dialog long">
-            
-            <div id="rez"><img style="width:80%" src="img/design/rez.png" alt="rez1"/></div>
-           
-            <div class="description">
-                <p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
+        <div class="work-dialog"> <!-- ** TO DO ** -->
+            <div id="rez-caption">
+            	<p>Poster advertisements for The Rez, a student-run coffeeshop at Tufts University</p>
                 <p>Designed and created with Adobe Photoshop & Illustrator CC</p>
                 <br><br>
                 <p class="date">FEBRUARY 2016</p>
             </div>
+            <div id="rez-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            
+                <div class="carousel-inner">
+                    <div class="item active">
+                     <img class="img-responsive" src="img/design/rez1.png" alt="rez"/>
 
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/design/rez2.png" alt="rez"/>
+  
+                    </div>
+                    <div class="item">
+                      <img class="img-responsive" src="img/design/rez3.png" alt="rez"/>
 
-                               
+                    </div>
+                </div>
+
+            
+                <a class="left carousel-control" href="#rez-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#rez-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
+            </div>
         </div>
     </span>
 </div>
@@ -354,23 +373,42 @@
 <script>
 
     var mag_html = '';
+    var mag_html2 = '';
+    var rez_html = '';
+    var rez_html2 = '';
     var collage_html = '';
 
     $('.work-obj').click(function(e) {
         if ($(this).is('#mag-obj')) {
             e.preventDefault();
-            var d = $(this).find('.work-dialog');
-
             vex.dialog.open({
-                message: mag_html,
+                message: '',
                 buttons:[],
-
                 afterOpen: function($vexContent) {
-                    if (mag_html == '') {
-                        mag_html = $('#mag-carousel')[0];
-                        $vexContent[0].appendChild(mag_html);
-                        $('#mag-carousel').carousel();
+                    if (mag_html == '' && mag_html2 == '') {
+                        mag_html = $('#mag-caption')[0];
+                        mag_html2 = $('#mag-carousel')[0];
                     }
+                    $vexContent[0].appendChild(mag_html);
+                    $vexContent[0].appendChild(mag_html2);
+                    $('#mag-carousel').carousel();
+
+                }
+            });
+        } else if ($(this).is('#rez-obj')) {
+            e.preventDefault();
+            vex.dialog.open({
+                message: '',
+                buttons:[],
+                afterOpen: function($vexContent) {
+                    if (rez_html == '' && rez_html2 == '') {
+                        rez_html = $('#rez-caption')[0];
+                        rez_html2 = $('#rez-carousel')[0];
+                    }
+                    $vexContent[0].appendChild(rez_html);
+                    $vexContent[0].appendChild(rez_html2);
+                    $('#rez-carousel').carousel();
+
                 }
             });
         } 

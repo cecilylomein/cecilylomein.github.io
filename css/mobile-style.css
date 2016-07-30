@@ -27,7 +27,7 @@
     #scroll-down {
         position:relative;
         top:190px;
-        z-index:20;
+        z-index:10;
     }
     #scroll-down img {
         width:100px;
@@ -205,7 +205,7 @@
         color:#ebbcbc !important;
         text-decoration:none;
         z-index: 4;
-        font-weight:400;
+        
         
     }
     #work-section { 
