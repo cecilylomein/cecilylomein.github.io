@@ -289,33 +289,26 @@
         </div>
 
         <div class="work-dialog"> <!-- ** TO DO ** -->
-
-            <div id="mag-carousel" class="carousel slide" data-ride="carousel">
+            <div id="mag-caption">MAGAZINE CAPTION GOES HERE
+            </div>
+            <div id="mag-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             
                 <div class="carousel-inner">
                     <div class="item active">
                      <img class="img-responsive" src="img/design/mag1.png" alt="mag1"/>
-                      <div class="carousel-caption">
-                        CAPTION GOES HERE YAY
-                      </div>
+
                     </div>
                     <div class="item">
                       <img class="img-responsive" src="img/design/mag2.png" alt="mag2"/>
-                      <div class="carousel-caption">
-                        ACAPTION GOES HERE YAY
-                      </div>
+  
                     </div>
                     <div class="item">
                       <img class="img-responsive" src="img/design/mag3.png" alt="mag3"/>
-                      <div class="carousel-caption">
-                        CAPTION GOES HERE YAY
-                      </div>
+
                     </div>
                     <div class="item">
                       <img class="img-responsive" src="img/design/mag4.png" alt="mag4"/>
-                      <div class="carousel-caption">
-                        CAPTION GOES HERE YAY
-                      </div>
+
                     </div>
                 </div>
 
@@ -328,17 +321,7 @@
                 </a>
 
             </div>
-
-
-
-
-            coming soon !
         </div>
-    
-
-
-
-
     </span>
     
 
@@ -488,31 +471,29 @@
 
 
     var mag_html = '';
+    var mag_html2 = '';
     var collage_html = '';
 
     $('.work-obj').click(function(e) {
-
-
-
-
-
         if ($(this).is('#mag-obj')) {
             e.preventDefault();
-            var d = $(this).find('.work-dialog');
-
             vex.dialog.open({
-                message: mag_html,
+                message: '',
                 buttons:[],
-
                 afterOpen: function($vexContent) {
-                    if (mag_html == '') {
-                        mag_html = $('#mag-carousel')[0];
-                        $vexContent[0].appendChild(mag_html);
-                        $('#mag-carousel').carousel();
+                    if (mag_html == '' && mag_html2 == '') {
+                        mag_html = $('#mag-caption')[0];
+                        mag_html2 = $('#mag-carousel')[0];
                     }
+                    $vexContent[0].appendChild(mag_html);
+                    $vexContent[0].appendChild(mag_html2);
+                    $('#mag-carousel').carousel();
+
                 }
             });
-        } /*else if ($(this).is('#collage-obj')) {
+        } 
+        /*
+        else if ($(this).is('#collage-obj')) {
             e.preventDefault();
             vex.dialog.open({
                 message:collage_html,
@@ -527,7 +508,8 @@
                 }
             });
 
-        }*/
+        }
+        */
         
         else if (!($(this).is('.no-dialog'))) {
             e.preventDefault();

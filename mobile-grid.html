@@ -357,11 +357,6 @@
     var collage_html = '';
 
     $('.work-obj').click(function(e) {
-
-
-
-
-
         if ($(this).is('#mag-obj')) {
             e.preventDefault();
             var d = $(this).find('.work-dialog');
@@ -378,7 +373,9 @@
                     }
                 }
             });
-        } /*else if ($(this).is('#collage-obj')) {
+        } 
+
+        /*else if ($(this).is('#collage-obj')) {
             e.preventDefault();
             vex.dialog.open({
                 message:collage_html,
