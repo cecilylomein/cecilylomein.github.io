@@ -1,4 +1,3 @@
-
 <div class="row">
 <span class="work-obj art"> <!-- Collage --> 
         <img class="work" src="img/mobile/art-thumbnail.jpg" alt="art" />
@@ -13,7 +12,7 @@
         <div class="work-dialog">
 
             <div class="row work-thumb"> <!-- thumbnails -->
-                <img name="eye" class="thumb" src="img/art/eye.png" alt="eye"/>
+                <img name="eye" class="thumb" src="img/mobile/art/eye-thumbnail.jpg" alt="eye"/>
                 <img name="mend" class="thumb" src="img/art/mend.png" alt="mend"/>
                 <img name="pp" class="thumb" src="img/art/pp.png" alt="pp"/>
                 <img name="god" class="thumb" src="img/art/god.png" alt="god"/>
@@ -419,9 +418,9 @@
 
         $('.thumb').click(function () {
             if ($(this).is('.video')) {
-                $(this).parent().next().find('#work-closeup').html('<video width="600" controls><source src="img/art/' + $(this).attr('name') + '.mp4" type="video/mp4">Your browser does not support the video tag.</video>').show();
+                $(this).parent().next().find('#work-closeup').html('<video width="600" controls><source src="img/mobile/art/' + $(this).attr('name') + '.mp4" type="video/mp4">Your browser does not support the video tag.</video>').show();
             } else {
-                $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/art/' + $(this).attr('name') + '.png" alt="' + $(this).attr('id') + '"/>').show();
+                $(this).parent().next().find('#work-closeup').html('<img class="closeup" src="img/mobile/art/' + $(this).attr('name') + '.jpg" alt="' + $(this).attr('id') + '"/>').show();
             }
                 var info = '#' + $(this).attr('name') + '-info';
                 var infotext = $(this).parent().next().find(info).html();

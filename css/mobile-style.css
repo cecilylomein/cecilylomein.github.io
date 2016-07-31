@@ -226,15 +226,8 @@
         width:130px;
         height:auto;
     }
-    #mobile-alert img {
-        width:90%;
-    }
-    #mobile-alert p {
-        font-size: 32px;
-        line-height: 30px;
-        margin:0 20px;
-        text-align: center;
-    }
+
+
     .text-muted {
         font-size:12px;
     }
