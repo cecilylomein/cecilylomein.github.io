@@ -29,8 +29,8 @@ $(document).ready(function() {
 
 
 });
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
+$(window).on('unload', function() {
+   $(window).scrollTop(0);
 });
 
 
