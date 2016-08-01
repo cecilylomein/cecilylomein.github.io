@@ -248,7 +248,7 @@
     }
 
     #work-closeup img {
-        max-height:40vh;
+        max-height:40;
     }
 
     #work-info {
@@ -316,6 +316,7 @@
 
     .carousel-control .glyphicon {
         font-size:20px;
+        color:#222 !important;
     }
 
     #mag-caption {
