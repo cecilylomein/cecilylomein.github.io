@@ -647,12 +647,14 @@ footer {
     }
     #work-info .date {
         position:relative;
-        font-size:12px;
+        font-size:10px;
         text-transform:uppercase;
     }
 
 
     .description {
+        font-size:14px;
+        line-height: 18px;
         position:relative;
         top:100px;
         margin-left:20px;
