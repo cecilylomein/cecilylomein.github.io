@@ -20,6 +20,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
+    $(this).scrollTop(0);
     $(".rotate").textrotator({
         animation: "fade",
         separator: "; ",
