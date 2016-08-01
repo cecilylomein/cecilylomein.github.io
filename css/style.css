@@ -465,7 +465,8 @@ footer {
     #me-pic{
         position:relative;
         top:-50px;
-        left:-50px;
+        left:-40px;
+        width:30vw;
     }
     #likes {
         position:relative;
