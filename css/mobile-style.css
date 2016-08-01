@@ -1,16 +1,16 @@
 @media only screen and (max-device-width: 649px)  {
-    video {
-        width:90%;
+    .vex.vex-theme-plain {
+      padding-top: 7vh;
+      padding-bottom:7vh;
+    }
+
+    iframe {
+        width:95%;
     }
     body{
         overflow-x:hidden !important;
         width:100% !important;
     }
-    /*
-    .header {
-        background: url(../img/mobile-bg.jpg) auto 100% no-repeat scroll;
-    }
-*/
 
     .header {
         background: -webkit-linear-gradient(white,#ccc); /* For Safari 5.1 to 6.0 */
@@ -26,7 +26,7 @@
     }
     #scroll-down {
         position:relative;
-        top:190px;
+        top:35vh;
         z-index:10;
     }
     #scroll-down img {
@@ -99,6 +99,9 @@
 
     .skills {
         margin:50px 0;
+    }
+    .skillbar {
+        width:90vw;
     }
     .skillbar-title {
         text-align: left;
@@ -189,7 +192,8 @@
 
 
     #filter-main {
-        margin:50px 0;
+        margin:50px auto;
+        width:90vw;
     }
 
     .filter {
@@ -198,22 +202,20 @@
         display:inline;
         margin: 20px;
         letter-spacing: 5px;
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .filter:hover {
         color:#ebbcbc !important;
         text-decoration:none;
         z-index: 4;
-        
-        
     }
     #work-section { 
         color:black;
-        background: #fff; /* For browsers that do not support gradients */
+        background: #fff; 
     }
     #work-header {
-        font-size:90px;
+        font-size:72px;
     }
     #work-container {
         width:100%;
@@ -234,13 +236,12 @@
 
     .caption {display:none !important;}
 
-    .work-thumb {
-        padding:0;
-    }
     .work-thumb img{
-        height:30px;
+        height:8vw;
         margin:2px 0;
     }
+
+
 
     .work-dialog h1 {
         font-size:32px;
@@ -248,7 +249,9 @@
     }
 
     #work-closeup img {
+        margin-top:20px;
         max-height:40vh;
+        max-width:85vw;
     }
 
     #work-info {
@@ -263,7 +266,7 @@
     #work-info .title {
         font-size:28px;
         letter-spacing: 5px;
-        line-height: 16px;
+        line-height: 14px;
 
     }
     #work-info .date {
@@ -295,7 +298,7 @@
 
     .long-button {
         text-transform: uppercase;
-        width:250px;
+        width:65vw;
         height:auto;
     }
     #rez-caption {
