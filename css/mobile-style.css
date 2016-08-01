@@ -240,11 +240,6 @@
     .work-thumb img{
         height:40px;
         margin:2px 0;
-
-    }
-    .work-dialog {
-        margin-bottom:50px;
-        font-size:72px;
     }
 
     .work-dialog h1 {
@@ -252,33 +247,28 @@
         font-weight:200;
     }
 
-    #work-closeup {
-
-    }
     #work-closeup img {
-        max-width:300px;
-        max-height:400px;
-
+        max-height:40vh;
     }
 
     #work-info {
         position:relative;
+        font-size:12px;
         margin:10px;
-        padding:10px;
-        text-align:center;
+        padding-top:20px;
+        padding-bottom:0;
+        text-align:left;
     }
     #work-info .title {
-        font-size:32px;
+        font-size:28px;
         letter-spacing: 5px;
 
     }
     #work-info .date {
         position:relative;
-        font-size:8px;
+        font-size:10px;
         text-transform:uppercase;
     }
-
-
 
     .description {
         font-size: 14px;
@@ -297,7 +287,7 @@
         line-height: 30px;
         position:relative;
         font-size:32px;
-        letter-spacing:5px;"
+        letter-spacing:5px;
 
     }
 
@@ -307,7 +297,10 @@
         height:auto;
     }
     #rez-caption {
-        text-align:left;
+        letter-spacing: 2px;
+        font-size:12px;
+        line-height:14px;
+        text-align:right;
     }
 
     #rez-caption .date {
@@ -315,10 +308,29 @@
         text-transform: uppercase;
     }
 
+    #rez-carousel img {
+        max-height: 60vh;
+        padding:10px 0;
 
+    }
 
     .carousel-control .glyphicon {
         font-size:20px;
+    }
+
+    #mag-caption {
+        font-size:12px;
+        text-align: right;
+        line-height: 14px;
+        letter-spacing: 2px;
+    }
+
+    #mag-caption .date {
+        font-size:10px;
+
+    }
+    #mag-carousel img {
+        max-height: 60vh;
     }
 
 
