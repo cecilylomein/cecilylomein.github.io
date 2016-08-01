@@ -116,10 +116,7 @@ body {
     height: 100%;
     /*background: url(../img/day-bg.jpg) no-repeat center center scroll;
     */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-color:#eee;
 }
 
 
@@ -278,7 +275,7 @@ body {
     -moz-border-radius-bottomleft:3px;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
-    opacity:.4;
+    opacity:.6;
 }
 
 .skillbar-title:hover {
@@ -420,17 +417,10 @@ body {
 }
 
 
-.text-muted {
-    text-transform: uppercase;
-    color:#aaa;
-
-    font-size:10px;
-    letter-spacing: 3px;
-}
-
 
 footer {
-    padding: 100px 0;
+    padding-top:120px;
+    padding-bottom:50px;
     background: #eeeeee; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(white,#dddddd); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(white,#dddddd); /* For Opera 11.1 to 12.0 */
@@ -517,6 +507,7 @@ footer {
     }
     #frenchfry {
         top:20px;
+        left:20px;
     }
 
     #mobile-alert {
@@ -629,33 +620,30 @@ footer {
     /* INFO DIALOGS */
 
     .work-thumb img{
-        height:100px;
+        height:10vh;
         transition: all .2s ease-in-out;
     }
     .work-thumb img:hover { 
         transform: scale(1.1); 
     }
     #work-closeup {
-        margin:20px 0;
-        padding:0 100px;
-        width:730px;
+        margin:20px;
+
     }
     #work-closeup img {
-        max-height:450px;
-        max-width:600px;
+        position:relative;
+        max-height:60vh;
+        max-width:60vw;
     }
 
     #work-info {
-        position:relative;
         top:80px;
-        width:400px;
         text-align:left;
 
     }
     #work-info .title {
         font-size:32px;
         letter-spacing: 5px;
-
     }
     #work-info .date {
         position:relative;
@@ -664,12 +652,12 @@ footer {
     }
 
 
-
     .description {
         position:relative;
-        top:120px;
+        top:100px;
+        margin-left:20px;
         text-align: left;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
     }
 
     .description-title {
@@ -677,7 +665,7 @@ footer {
         position:relative;
         top:-40px;
         font-size:32px;
-        letter-spacing:5px;"
+        letter-spacing:5px;
     }
 
 
@@ -697,11 +685,22 @@ footer {
 
     }
 
+    #mag-caption {
+        position:relative;
+        left:40%;
+        font-size:12px;
+        width:50vw;
+        text-align: right;
+        margin:30px 0;
+        line-height:14px;
+        letter-spacing: 2.5px;
+
+    }
+
     #mag-carousel .item img{
         display: block;
         margin:auto;
-        max-height:80vh;
-
+        max-height:67vh;
     }   
 
 

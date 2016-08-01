@@ -61,20 +61,20 @@
             </div>
       
             <div class="row"> 
-                <div id="work-closeup" class="col-md-6">
+                <div id="work-closeup" class="col-md-7">
                 </div>
-                <div id="work-info" class="col-xs-12 col-sm-12 col-md-6">
+                <div id="work-info" class="col-md-4">
                 </div>
 
-                <div style="display:none;" id="work-detail"><img src="img/art/eye-detail.png"/></div>
+                <!-- <div style="display:none;" id="work-detail"><img src="img/art/eye-detail.png"/></div> -->
 
                 <div class="hidden-info" id="eye-info">
-                    <span class="title">eYYYe</span><br><br>
+                    <span class="title">i</span><br><br>
                     mixed media<br><br>
                     <span class="date">june 2016</span>
                 </div>
                 <div class="hidden-info" id="mend-info">
-                    <span class="title">i am on the Mend</span><br><br>
+                    <span class="title">The Mend</span><br><br>
                     mixed media<br><br>
                     <span class="date">june 2016</span>
                 </div>
@@ -153,16 +153,15 @@
         </div>
         <div class="work-dialog">
             <div class="row">
-                <div class="col-xs-12 col-md-7">
-                <iframe src="https://player.vimeo.com/video/164029361?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <div class="col-xs-12 col-md-5 description">
+                <div class="col-md-7">
+                    <iframe src="https://player.vimeo.com/video/164029361?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4 description">
                     <p class="description-title">(someone let me know when they find out, thx)</p>
                     <p>self-choreographed, filmed, and produced</p>
 
-
                     <p>music: station - lapsley</p><br>
                     <p style="font-size:12px;">MAY 2016</p>
-
                 </div>
 
             </div>
@@ -187,7 +186,7 @@
             <div class="row">
                 <div class="col-md-7">
                 <iframe src="https://player.vimeo.com/video/165464455?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <div class="col-md-5 description">
+                <div class="col-md-4 description">
                     <p class="description-title">a study on im/permanence</p>
 
                     <p>music: ^.error - tetsu inoue, burnt norton (interlude) - lana del rey, paris - black atlass</p>
@@ -280,13 +279,15 @@
             <div class="blur"></div>
             <div class="caption-text">
                 <h1>Magazine Spread</h1>
-                <p>"What it's like to live your life online," originally appearing on Dazed Digital</p>
+                <p>"What it's like to live your life online," an interview with Molly Soda</p>
                 <p class="date">APRIL 2016</p>
             </div>
         </div>
 
         <div class="work-dialog"> <!-- ** TO DO ** -->
-            <div id="mag-caption">MAGAZINE CAPTION GOES HERE
+            <div id="mag-caption">
+                <p>Magazine layout for "What it's like to live your life online," originally appearing on Dazed Digital.</p>
+                <p>Designed and created with Adobe Illustrator & InDesign CC</p>
             </div>
             <div id="mag-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
             
@@ -395,7 +396,7 @@
             <div class="row">
                 <div class="col-md-7">
                 <iframe src="https://player.vimeo.com/video/165467647?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <div class="col-md-5 description">
+                <div class="col-md-4 description">
                     <p class="description-title">a promotional video</p>
 
                     <p>music: all time low - jon bellion</p>
@@ -427,7 +428,7 @@
             <div class="row">
                 <div class="col-md-7">
                 <iframe src="https://player.vimeo.com/video/165465064?autoplay=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                <div class="col-md-5 description">
+                <div class="col-md-4 description">
                     <p class="description-title">"no death, no fear"</p>
 
                     <p>music: spanish sahara (morso remix) - foals</p>
@@ -478,8 +479,8 @@
                 buttons:[],
                 afterOpen: function($vexContent) {
                     if (mag_html == '' && mag_html2 == '') {
-                        mag_html = $('#mag-caption')[0];
-                        mag_html2 = $('#mag-carousel')[0];
+                        mag_html = $('#mag-carousel')[0];
+                        mag_html2 = $('#mag-caption')[0];
                     }
                     $vexContent[0].appendChild(mag_html);
                     $vexContent[0].appendChild(mag_html2);
