@@ -689,11 +689,11 @@ footer {
 
     #mag-caption {
         position:relative;
-        left:40%;
-        font-size:12px;
+        font-size:14px;
         width:50vw;
-        text-align: right;
-        margin:30px 0;
+        text-align: left;
+        margin-left:15px;
+        margin-bottom:15px;
         line-height:14px;
         letter-spacing: 2.5px;
 
