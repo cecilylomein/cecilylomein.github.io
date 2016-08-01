@@ -20,7 +20,6 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-    $(this).scrollTop(0);
     $(".rotate").textrotator({
         animation: "fade",
         separator: "; ",
@@ -30,7 +29,9 @@ $(document).ready(function() {
 
 
 });
-
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
 
 
  $(".scroll a").click(function(event){
