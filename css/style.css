@@ -702,6 +702,23 @@ footer {
         max-height:67vh;
     }   
 
+    #axe-caption {
+        position:relative;
+        font-size:14px;
+        width:50vw;
+        text-align: left;
+        margin-left:15px;
+        margin-bottom:15px;
+        line-height:14px;
+        letter-spacing: 2.5px;
+    }
+
+    #axe-carousel .item img{
+        display: block;
+        margin:auto;
+        max-height:67vh;
+    }
+
     #photo-description {
         width:60vw;
         margin:auto;
