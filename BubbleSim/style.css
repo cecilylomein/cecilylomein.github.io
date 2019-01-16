@@ -1,7 +1,18 @@
-@import url('http://getbootstrap.com/dist/css/bootstrap.css');
- @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+ 
  body {
     background: none repeat scroll 0 0 white;
+}
+
+#autoplay-warning {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+    background-color:rgba(255,0,0,0.5);
+    font-family: helvetica;
 }
 nav.sidebar-menu-collapsed {
     width: 44px;

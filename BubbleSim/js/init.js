@@ -8,8 +8,7 @@ var spheres = [];
 var directionalLight, pointLight;
 var mouseX = 0;
 var mouseY = 0;
-var sound_effect;
-var sound_effect2;
+
 var path = "images/beach/";
 var format = '.jpg';
 var projector, mouse = new THREE.Vector2(), closestIntersection;
@@ -40,7 +39,7 @@ function reset() {
 
 	// SKYBOX
 	skybox.format = THREE.RGBFormat;
-	skybox = loader.load(urls);
+	//skybox = loader.load(urls);
 	var shader = THREE.ShaderLib[ "cube" ];
 	shader.uniforms[ "tCube" ].value = skybox;
 	var material = Physijs.createMaterial(
@@ -219,6 +218,7 @@ function superCoolMode() {
 window.onload = function () {
 
 	// WEBGL CHECK
+	/*
 	if( Detector.webgl ) {
 		renderer = new THREE.WebGLRenderer( { antialias: true } );
 	}
@@ -226,6 +226,8 @@ window.onload = function () {
 	else {
 		renderer = new THREE.CanvasRenderer();
 	}
+	*/
+	renderer = new THREE.WebGLRenderer( { antialias: true } );
 	// RENDERER SETTINGS 
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	renderer.setPixelRatio( window.devicePixelRatio );
@@ -246,6 +248,7 @@ window.onload = function () {
 
 
 
+
 	// CREATE SCENE
 	scene = new Physijs.Scene;
 	scene.addEventListener('ready', function() {
@@ -255,9 +258,8 @@ window.onload = function () {
 		var path = "images/";
 		var format = '.jpg';
 
-		// SOUND EFFECTS
-		sound_effect = new Audio("pop.mp3");
-		sound_effect2 = new Audio("hi_pop.mp3")
+
+
 
 		// SKYBOX
 		skybox.format = THREE.RGBFormat;
@@ -323,7 +325,9 @@ window.onload = function () {
 	
 }
 
-
+window.onclick = function(){
+	document.getElementById("autoplay-warning").style.display = "none";
+};
 
 function animate() 
 {
@@ -368,6 +372,11 @@ function cloneBubble(bubble){
 function updateIntersections() {
 	scene.updateMatrixWorld();
 	raycaster.setFromCamera(mouse,camera);
+
+		// SOUND EFFECTS
+		
+		
+
 	var intersects = raycaster.intersectObjects( scene.children );
 
 	if ( intersects.length > 0 ) {
@@ -375,7 +384,9 @@ function updateIntersections() {
 
 
 			closestIntersection = intersects[ 0 ].object;
-			sound_effect.play();
+			document.getElementById("sound").play();
+
+		
 
 			if (coolmode) var dx = 0.1;
 			else var dx = closestIntersection.scale.x * 100;
@@ -431,27 +442,27 @@ function updateIntersections() {
 			if (temp1.scale.x > 1.0) {
 				scene.add( temp1 );
 				spheres.push( temp1 );
-				sound_effect2.play();
+				document.getElementById("sound2").play();
 				if (!coolmode) temp1.setLinearVelocity(new THREE.Vector3((Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400));
 			} 
 
 			if (temp2.scale.x > 1.0) {
 				scene.add( temp2 );
 				spheres.push( temp2 );
-				sound_effect2.play();
+				document.getElementById("sound2").play();
 				if (!coolmode) temp2.setLinearVelocity(new THREE.Vector3((Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400));
 			}
 			if (temp3.scale.x > 1.0) {
 				scene.add( temp3 );
 				spheres.push( temp3);
-				sound_effect2.play();
+				document.getElementById("sound2").play();
 				if (!coolmode) temp3.setLinearVelocity(new THREE.Vector3((Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400));
 			}
 
 			if (temp4.scale.x > 1.0) {
 				scene.add( temp4 );
 				spheres.push( temp4 );
-				sound_effect2.play();
+				document.getElementById("sound2").play();
 				if (!coolmode) temp4.setLinearVelocity(new THREE.Vector3((Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400, (Math.round(Math.random()) * 2 - 1) * 400));
 			}
 
